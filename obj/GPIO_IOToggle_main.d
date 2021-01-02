@@ -28,4 +28,5 @@ obj/GPIO_IOToggle_main.o: src/GPIO_IOToggle_main.c \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Button.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Config.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Com.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Led.h
+ C:/Users/cmart/ST/BlueNRG-1DKLib/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Led.h \
+ inc/BlueNRG1_it.h

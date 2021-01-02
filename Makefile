@@ -48,7 +48,7 @@ ASFLAGS = -ggdb -mthumb -mcpu=cortex-m0
 
 
 #LINKER FLAGS
-LDFLAGS = -T$(LD_SCRIPT) #-e Reset_Handler 
+LDFLAGS = -T$(LD_SCRIPT) # -e Reset_Handler 
 
 # Rules to build bin
 all: bin/$(PROJECT).bin

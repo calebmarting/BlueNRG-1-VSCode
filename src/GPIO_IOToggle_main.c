@@ -19,6 +19,7 @@
 #include "bluenrg_x_device.h"
 #include "BlueNRG1_conf.h"
 #include "SDK_EVAL_Config.h"
+#include "BlueNRG1_it.h"
 
 /** @addtogroup BlueNRG1_StdPeriph_Examples
   * @{
