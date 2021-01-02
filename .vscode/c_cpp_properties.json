@@ -1,0 +1,53 @@
+{
+    "configurations": [
+        {
+            "name": "STM32",
+            "includePath": [
+                "${workspaceRoot}",
+                "${workspaceRoot}/inc",
+                "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc",
+                "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc",
+                "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/Bluetooth_LE/inc",
+                "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Include",
+                "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include",
+                "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/SDK_Eval_BlueNRG1/inc",
+                "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BLE_Application/OTA/inc",
+                "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BLE_Application/Utils/inc",
+                "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BLE_Application/layers_inc",
+                "C:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include",
+                "C:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include-fixed",
+                "C:/armtoolslib/arm-none-eabi/include",
+                "C:/armtoolslib/arm-none-eabi/include/machine",
+                "C:/armtoolslib/arm-none-eabi/include/newlib-nano",
+                "C:/armtoolslib/arm-none-eabi/include/sys"
+
+
+            ],
+            "defines": [],
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "path": [
+                    "${workspaceRoot}",
+                    "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc",
+                    "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc",
+                    "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/Bluetooth_LE/inc",
+                    "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Include",
+                    "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include",
+                    "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/SDK_Eval_BlueNRG1/inc",
+                    "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BLE_Application/OTA/inc",
+                    "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BLE_Application/Utils/inc",
+                    "C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BLE_Application/layers_inc",
+                    "C:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include",
+                    "C:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include-fixed",
+                    "C:/armtoolslib/arm-none-eabi/include"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
+            },
+            // "compilerPath": "C:/MinGW/bin/gcc.exe",
+            // "cppStandard": "c++17",
+            // "cStandard": "c99"
+        }
+    ],
+    "version": 4
+}
