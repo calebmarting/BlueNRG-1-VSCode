@@ -37,7 +37,7 @@ OBJCOPY = arm-none-eabi-objcopy #final executable builder
 RM      = rm -rf
 # MKDIR   = @mkdir -p $(@D) #creates folders if not present
 
-DEFINES = 
+DEFINES = -DBLUENRG1_DEVICE -DDEBUG -DHS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ -DLS_SOURCE=LS_SOURCE_INTERNAL_RO -DSMPS_INDUCTOR=SMPS_INDUCTOR_4_7uH -DUSER_BUTTON=BUTTON_1
 
 #GCC FLAGS
 CFLAGS = -ggdb -mthumb -mcpu=cortex-m0 -specs=nano.specs
@@ -48,7 +48,7 @@ ASFLAGS = -ggdb -mthumb -mcpu=cortex-m0
 
 
 #LINKER FLAGS
-LDFLAGS = -T$(LD_SCRIPT) $(DEFINES) #-e Reset_Handler 
+LDFLAGS = -T$(LD_SCRIPT) #-e Reset_Handler 
 
 # Rules to build bin
 all: bin/$(PROJECT).bin
@@ -64,7 +64,7 @@ $(OBJ)%.o: libs/%.c
 	$(CC) -o $@ $^ $(INC) $(CFLAGS) 
 
 bin/$(PROJECT).elf: $(OBJS) $(S_OBJS) $(PRE_OBJS)
-	$(LD) -o $@ $^ $(LDFLAGS) -L./assembly -lm -lc 
+	$(LD) -o $@ $^ $(LDFLAGS) -L./assembly -lgcc -lm -lc 
 	# --verbose
 
 bin/$(PROJECT).bin: bin/$(PROJECT).elf

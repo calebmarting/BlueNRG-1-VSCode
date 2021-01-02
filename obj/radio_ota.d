@@ -8,7 +8,7 @@ obj/radio_ota.o: libs/radio_ota.c \
  C:/armtoolslib/arm-none-eabi/include/sys/_stdint.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc/radio_ota.h \
  inc/BlueNRG1_conf.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_adc.h \
+ C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_flash.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include/bluenrg_x_device.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include/BlueNRG1.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Include/core_cm0.h \
@@ -18,14 +18,9 @@ obj/radio_ota.o: libs/radio_ota.c \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc/compiler.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc/hal_types.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include/system_bluenrg.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_flash.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_gpio.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_i2c.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_mft.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_rtc.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_spi.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_sysCtrl.h \
+ C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_uart.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_wdg.h \
+ C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_mft.h \
+ C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_sysCtrl.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/misc.h
