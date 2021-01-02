@@ -7,7 +7,7 @@
 	{
 	    "name": "Debug (OpenOCD)",
 	    "cwd": "${workspaceRoot}",
-        "executable": "./GPIO_IOToggle.elf",
+        "executable": "./bin/blink.elf",
         "request": "launch",
 	    "type": "cortex-debug",
         "servertype": "openocd",

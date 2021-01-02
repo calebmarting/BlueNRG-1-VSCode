@@ -1,4 +1,4 @@
-obj/system_bluenrg1.o: src/system_bluenrg1.c \
+obj/system_bluenrg1.o: libs/system_bluenrg1.c \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include/bluenrg_x_device.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include/BlueNRG1.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Include/core_cm0.h \
