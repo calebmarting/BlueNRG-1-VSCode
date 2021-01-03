@@ -72,6 +72,20 @@ int main(void)
 
   /* Put the LEDs off */
   GPIO_WriteBit(GPIO_Pin_14, LED_OFF);
+
+  /* Enables the BUTTON Clock */
+  SysCtrl_PeripheralClockCmd(CLOCK_PERIPH_GPIO, ENABLE);
+
+  /* Configures Button pin as input */
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Input;
+  GPIO_InitStructure.GPIO_Pull = DISABLE;
+  GPIO_InitStructure.GPIO_HighPwr = DISABLE;
+  GPIO_Init(&GPIO_InitStructure);
+
+
+
+
   
   /* Configure SysTick to generate interrupt */
   SysTick_Config(SYST_CLOCK/1000 - 1);  
@@ -80,10 +94,7 @@ int main(void)
   while(1) {
     GPIO_ToggleBits(GPIO_Pin_14);
     SdkDelayMs(250);
-//    GPIO_ToggleBits(Get_LedGpioPin(LED2));
-//    SdkDelayMs(250);
-//    GPIO_ToggleBits(Get_LedGpioPin(LED3));
-//    SdkDelayMs(250);
+    while(!GPIO_ReadBit(GPIO_Pin_12));
   }
 }
 
