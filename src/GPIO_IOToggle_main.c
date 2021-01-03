@@ -94,7 +94,7 @@ int main(void)
   while(1) {
     GPIO_ToggleBits(GPIO_Pin_14);
     SdkDelayMs(250);
-    while(!GPIO_ReadBit(GPIO_Pin_12));
+    // while(!GPIO_ReadBit(GPIO_Pin_12));
   }
 }
 
