@@ -67,59 +67,59 @@ __aeabi_memmove4:
 
 
 
-@ void __aeabi_memmove(void *r0, const void *r1, size_t r2);
-@
-@ Move r2 bytes from r1 to r0 and check for overlap.
-@ r0 and r1 need not be aligned.
-@
-	.thumb_func
-	.global __aeabi_memmove
-__aeabi_memmove:
+; @ void __aeabi_memmove(void *r0, const void *r1, size_t r2);
+; @
+; @ Move r2 bytes from r1 to r0 and check for overlap.
+; @ r0 and r1 need not be aligned.
+; @
+; 	.thumb_func
+; 	.global __aeabi_memmove
+; __aeabi_memmove:
 
 
 
-	cmp	r0, r1
-	bls	__aeabi_memcpy
-	adds	r3, r1, r2
-	cmp	r0, r3
-	blo	.Lbackward_entry
+; 	cmp	r0, r1
+; 	bls	__aeabi_memcpy
+; 	adds	r3, r1, r2
+; 	cmp	r0, r3
+; 	blo	.Lbackward_entry
 
 
 
-@ void __aeabi_memcpy(void *r0, const void *r1, size_t r2);
-@
-@ Move r2 bytes from r1 to r0. No overlap allowed.
-@ r0 and r1 need not be aligned.
-@
-	.thumb_func
-	.global __aeabi_memcpy
-__aeabi_memcpy:
+; @ void __aeabi_memcpy(void *r0, const void *r1, size_t r2);
+; @
+; @ Move r2 bytes from r1 to r0. No overlap allowed.
+; @ r0 and r1 need not be aligned.
+; @
+; 	.thumb_func
+; 	.global __aeabi_memcpy
+; __aeabi_memcpy:
 
 
 
-	cmp	r2, #8
-	blo	.Lforward1
-	mov	r3, r0
-	eors	r3, r1
-	lsls	r3, r3, #30
-	bne	.Lforward1
+; 	cmp	r2, #8
+; 	blo	.Lforward1
+; 	mov	r3, r0
+; 	eors	r3, r1
+; 	lsls	r3, r3, #30
+; 	bne	.Lforward1
 
-	lsrs	r3, r0, #1
-	bcc	.Lalign2
-	ldrb	r3, [r1]
-	strb	r3, [r0]
-	adds	r0, #1
-	adds	r1, #1
-	subs	r2, #1
-.Lalign2:
-	lsrs	r3, r0, #2
-	bcc	.Lalign4
-	ldrh	r3, [r1]
-	strh	r3, [r0]
-	adds	r0, #2
-	adds	r1, #2
-	subs	r2, #2
-.Lalign4:
+; 	lsrs	r3, r0, #1
+; 	bcc	.Lalign2
+; 	ldrb	r3, [r1]
+; 	strb	r3, [r0]
+; 	adds	r0, #1
+; 	adds	r1, #1
+; 	subs	r2, #1
+; .Lalign2:
+; 	lsrs	r3, r0, #2
+; 	bcc	.Lalign4
+; 	ldrh	r3, [r1]
+; 	strh	r3, [r0]
+; 	adds	r0, #2
+; 	adds	r1, #2
+; 	subs	r2, #2
+; .Lalign4:
 
 
 

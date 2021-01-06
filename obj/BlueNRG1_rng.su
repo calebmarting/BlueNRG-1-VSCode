@@ -1,0 +1,2 @@
+BlueNRG1_rng.c:93:6:RNG_Cmd	0	static
+BlueNRG1_rng.c:114:12:RNG_GetFlagStatus	0	static

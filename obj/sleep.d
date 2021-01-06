@@ -35,7 +35,6 @@ obj/sleep.o: libs/sleep.c \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_gpio.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_uart.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_mft.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_sysCtrl.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/misc.h \
  C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc/sleep.h \

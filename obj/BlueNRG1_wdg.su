@@ -1,0 +1,9 @@
+BlueNRG1_wdg.c:95:6:WDG_SetWriteAccess	0	static
+BlueNRG1_wdg.c:115:17:WDG_GetWriteAccess	0	static
+BlueNRG1_wdg.c:127:6:WDG_SetReload	0	static
+BlueNRG1_wdg.c:139:6:WDG_Enable	0	static
+BlueNRG1_wdg.c:150:6:WDG_DisableReset	0	static
+BlueNRG1_wdg.c:161:10:WDG_GetCounter	0	static
+BlueNRG1_wdg.c:172:6:WDG_ITConfig	0	static
+BlueNRG1_wdg.c:191:10:WDG_GetITStatus	0	static
+BlueNRG1_wdg.c:208:6:WDG_ClearITPendingBit	0	static

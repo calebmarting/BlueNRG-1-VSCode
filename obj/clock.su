@@ -1,0 +1,4 @@
+clock.c:51:6:SysCount_Handler	0	static
+clock.c:58:6:Clock_Init	0	static
+clock.c:66:12:Clock_Time	0	static
+clock.c:76:6:Clock_Wait	0	static

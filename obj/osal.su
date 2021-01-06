@@ -1,0 +1,3 @@
+osal.c:30:7:Osal_MemCpy	8	static
+osal.c:40:7:Osal_MemSet	8	static
+osal.c:49:5:Osal_MemCmp	8	static

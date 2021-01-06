@@ -1,0 +1,4 @@
+BLE_Beacon_main.c:243:6:Device_Init	24	static
+BLE_Beacon_main.c:374:5:main	96	static
+BLE_Beacon_main.c:462:6:hci_hardware_error_event	0	static
+BLE_Beacon_main.c:470:12:App_SleepMode_Check	8	static

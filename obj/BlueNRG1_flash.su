@@ -1,0 +1,14 @@
+BlueNRG1_flash.c:139:10:FLASH_ReadWord	0	static
+BlueNRG1_flash.c:151:9:FLASH_ReadByte	0	static
+BlueNRG1_flash.c:230:6:FLASH_Lock	0	static
+BlueNRG1_flash.c:240:6:FLASH_Unlock	0	static
+BlueNRG1_flash.c:250:6:FLASH_WaitCmdDone	0	static
+BlueNRG1_flash.c:85:6:FLASH_ErasePage	8	static
+BlueNRG1_flash.c:117:6:FLASH_EraseAllFlash	8	static
+BlueNRG1_flash.c:164:6:FLASH_ProgramWord	8	static
+BlueNRG1_flash.c:196:6:FLASH_ProgramWordBurst	8	static
+BlueNRG1_flash.c:262:6:FLASH_ClearCmdDone	0	static
+BlueNRG1_flash.c:283:6:FLASH_ITConfig	0	static
+BlueNRG1_flash.c:309:6:FLASH_ClearITPendingBit	0	static
+BlueNRG1_flash.c:330:12:FLASH_GetFlagStatus	0	static
+BlueNRG1_flash.c:354:6:FLASH_ClearFlag	0	static
