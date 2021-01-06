@@ -1,0 +1,12 @@
+{
+    "json.schemas": [
+    {
+        "fileMatch": [
+            "/myfile"
+        ],
+        "url": "schemaURL"
+    }
+    ],
+    "cortex-debug.armToolchainPath": "C:/PROGRA~2/GNUTOO~1/82018-~1/bin", 
+    "cortex-debug.openocdPath": "${workspaceRoot}/openocd-0.11.0-rc1/bin/openocd.exe"
+}
