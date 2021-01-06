@@ -1,0 +1,11 @@
+BlueNRG1_pka.c:234:12:rev_memcmp	8	static
+BlueNRG1_pka.c:88:6:PKA_Reset	0	static
+BlueNRG1_pka.c:104:6:PKA_StartProcessing	0	static
+BlueNRG1_pka.c:120:6:PKA_WaitProcess	0	static
+BlueNRG1_pka.c:132:12:PKA_GetProcessStatus	0	static
+BlueNRG1_pka.c:144:13:PKA_VerifyProcess	0	static
+BlueNRG1_pka.c:172:6:PKA_ITConfig	0	static
+BlueNRG1_pka.c:195:6:PKA_ClearITPendingBit	0	static
+BlueNRG1_pka.c:213:12:PKA_GetFlagStatus	0	static
+BlueNRG1_pka.c:261:13:PKA_SetData	88	static
+BlueNRG1_pka.c:328:13:PKA_GetData	0	static

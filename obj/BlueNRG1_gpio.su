@@ -1,0 +1,17 @@
+BlueNRG1_gpio.c:92:6:GPIO_DeInit	0	static
+BlueNRG1_gpio.c:116:6:GPIO_Init	16	static
+BlueNRG1_gpio.c:187:6:GPIO_StructInit	0	static
+BlueNRG1_gpio.c:205:6:GPIO_InitLowPowerModes	0	static
+BlueNRG1_gpio.c:254:6:GPIO_WriteBitsLowPowerModes	0	static
+BlueNRG1_gpio.c:284:6:GPIO_ToggleBitsLowPowerModes	0	static
+BlueNRG1_gpio.c:307:11:GPIO_ReadBit	0	static
+BlueNRG1_gpio.c:329:6:GPIO_SetBits	0	static
+BlueNRG1_gpio.c:345:6:GPIO_ResetBits	0	static
+BlueNRG1_gpio.c:363:6:GPIO_WriteBit	0	static
+BlueNRG1_gpio.c:385:6:GPIO_ToggleBits	0	static
+BlueNRG1_gpio.c:398:6:GPIO_EXTIStructInit	0	static
+BlueNRG1_gpio.c:413:6:GPIO_EXTIConfig	0	static
+BlueNRG1_gpio.c:458:6:GPIO_EXTICmd	0	static
+BlueNRG1_gpio.c:480:6:GPIO_ClearITPendingBit	0	static
+BlueNRG1_gpio.c:497:12:GPIO_GetITPendingBit	0	static
+BlueNRG1_gpio.c:519:10:GPIO_GetITStatusBit	0	static

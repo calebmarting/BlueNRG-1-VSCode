@@ -1,0 +1,7 @@
+sleep.c:116:13:frequency_switch	16	static
+sleep.c:142:13:BlueNRG_InternalSleep	592	static
+sleep.c:95:1:App_SleepMode_Check	0	static
+sleep.c:99:1:BlueNRG_Stack_Perform_Deep_Sleep_Check	0	static
+sleep.c:103:1:HAL_VTIMER_TimerSleepCheck	0	static
+sleep.c:650:9:BlueNRG_Sleep	32	static
+sleep.c:704:10:BlueNRG_WakeupSource	0	static

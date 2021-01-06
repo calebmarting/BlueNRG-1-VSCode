@@ -1,0 +1,4 @@
+miscutil.c:42:6:HAL_GetPartInfo	0	static
+miscutil.c:78:6:HAL_GetCrashInfo	8	static
+miscutil.c:84:6:HAL_CrashHandler	12	static
+miscutil.c:111:6:BLEPLAT_get_part_info	40	static

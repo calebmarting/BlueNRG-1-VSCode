@@ -1,0 +1,10 @@
+BlueNRG1_dma.c:116:6:DMA_DeInit	0	static
+BlueNRG1_dma.c:182:6:DMA_Init	8	static
+BlueNRG1_dma.c:239:6:DMA_StructInit	0	static
+BlueNRG1_dma.c:274:6:DMA_Cmd	0	static
+BlueNRG1_dma.c:298:6:DMA_SelectAdcChannel	0	static
+BlueNRG1_dma.c:324:6:DMA_SetCurrDataCounter	0	static
+BlueNRG1_dma.c:342:10:DMA_GetCurrDataCounter	0	static
+BlueNRG1_dma.c:364:6:DMA_FlagConfig	0	static
+BlueNRG1_dma.c:422:12:DMA_GetFlagStatus	0	static
+BlueNRG1_dma.c:487:6:DMA_ClearFlag	0	static
