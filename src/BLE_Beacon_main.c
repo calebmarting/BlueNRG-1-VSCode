@@ -386,51 +386,12 @@ int main(void)
   //TODO: UART no worky
 
   /* Init the UART peripheral */
-  // SdkEvalComUartInit(UART_BAUDRATE); 
-  /* Clock enable */
-  SysCtrl_PeripheralClockCmd(CLOCK_PERIPH_UART | CLOCK_PERIPH_GPIO, ENABLE);
+   SdkEvalComUartInit(UART_BAUDRATE); 
   
-  /* Configure GPIO_Pin_8 and GPIO_Pin_11 as UART_TXD and UART_RXD*/
-  GPIO_InitType GPIO_InitStructure;
-  GPIO_InitStructure.GPIO_Pin = SDK_EVAL_UART_TX_PIN;
-  GPIO_InitStructure.GPIO_Mode = SDK_EVAL_UART_TX_MODE;
-  GPIO_InitStructure.GPIO_Pull = DISABLE;
-  GPIO_InitStructure.GPIO_HighPwr = DISABLE;
-  GPIO_Init(&GPIO_InitStructure);
-
-  GPIO_InitStructure.GPIO_Pin = SDK_EVAL_UART_RX_PIN;
-  GPIO_InitStructure.GPIO_Mode = SDK_EVAL_UART_RX_MODE;
-  GPIO_Init(&GPIO_InitStructure);
-
-  /* ------------ USART configuration -------------------
-  - BaudRate = 115200 baud  
-  - Word Length = 8 Bits
-  - One Stop Bit
-  - No parity
-  - Hardware flow control disabled (RTS and CTS signals)
-  - Receive and transmit enabled
-  */
-  UART_InitType UART_InitStructure;
-  UART_InitStructure.UART_BaudRate = (uint32_t)UART_BAUDRATE;
-  UART_InitStructure.UART_WordLengthTransmit = UART_WordLength_8b;
-  UART_InitStructure.UART_WordLengthReceive = UART_WordLength_8b;
-  UART_InitStructure.UART_StopBits = UART_StopBits_1;
-  UART_InitStructure.UART_Parity = UART_Parity_No;
-  UART_InitStructure.UART_HardwareFlowControl = UART_HardwareFlowControl_None;
-  UART_InitStructure.UART_Mode = UART_Mode_Rx | UART_Mode_Tx;
-  UART_InitStructure.UART_FifoEnable = ENABLE;
-  UART_Init(&UART_InitStructure);
-  
-  /* Interrupt as soon as data is received. */
-  UART_RxFifoIrqLevelConfig(FIFO_LEV_1_64);
-
-  /* Enable UART */
-  UART_Cmd(ENABLE);
-  
+  //Enable peripheral clock for LED
   SysCtrl_PeripheralClockCmd(CLOCK_PERIPH_GPIO, ENABLE);
 
-
-  // GPIO_InitType GPIO_InitStructure;
+  GPIO_InitType GPIO_InitStructure;
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_14;
   GPIO_InitStructure.GPIO_Mode = GPIO_Output;
   GPIO_InitStructure.GPIO_Pull = ENABLE;
