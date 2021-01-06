@@ -21,22 +21,20 @@ obj/sleep.o: libs/sleep.c \
  C:/armtoolslib/arm-none-eabi/include/machine/stdlib.h \
  C:/armtoolslib/arm-none-eabi/include/string.h \
  C:/armtoolslib/arm-none-eabi/include/sys/string.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include/bluenrg_x_device.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include/BlueNRG1.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Include/core_cm0.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Include/core_cmInstr.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Include/core_cmFunc.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include/system_BlueNRG1.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc/compiler.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc/hal_types.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include/system_bluenrg.h \
+ libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/bluenrg_x_device.h \
+ libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/BlueNRG1.h \
+ libinc/Library/CMSIS/Include/core_cm0.h \
+ libinc/Library/CMSIS/Include/core_cmInstr.h \
+ libinc/Library/CMSIS/Include/core_cmFunc.h \
+ libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/system_BlueNRG1.h \
+ libinc/Library/hal/inc/compiler.h libinc/Library/hal/inc/hal_types.h \
+ libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/system_bluenrg.h \
  inc/BlueNRG1_conf.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_flash.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_gpio.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_uart.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_sysCtrl.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc/misc.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc/sleep.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc/miscutil.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc/crash_handler.h
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_flash.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_gpio.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_uart.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_sysCtrl.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/misc.h \
+ libinc/Library/hal/inc/sleep.h libinc/Library/hal/inc/miscutil.h \
+ libinc/Library/hal/inc/crash_handler.h

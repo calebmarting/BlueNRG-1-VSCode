@@ -29,10 +29,10 @@ $(info $$S_OBJS is [${C_SWITCH_OBJS}])
 
 
 #Flag points to the INC folder containing header files
-INC = -IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/Bluetooth_LE/library/static_stack \
-	-IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/BLE_Application/Profile_Central/includes \
-	-IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/Bluetooth_LE/library/static_stack \
-	-I./inc -IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc -IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/BlueNRG1_Periph_Driver/inc -IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/Bluetooth_LE/inc -IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Include -IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/CMSIS/Device/ST/BlueNRG1/Include -IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/SDK_Eval_BlueNRG1/inc -IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/BLE_Application/OTA/inc -IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/BLE_Application/Utils/inc -IC:/Users/cmart/ST/BlueNRG-1DKLib/Library/BLE_Application/layers_inc -IC:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include -IC:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include-fixed -IC:/armtoolslib/arm-none-eabi/include -IC:/armtoolslib/arm-none-eabi/include/machine -IC:/armtoolslib/arm-none-eabi/include/newlib-nano -IC:/armtoolslib/arm-none-eabi/include/sys
+INC = -Ilibinc/Library/Bluetooth_LE/library/static_stack \
+	-Ilibinc/Library/BLE_Application/Profile_Central/includes \
+	-Ilibinc/Library/Bluetooth_LE/library/static_stack \
+	-I./inc -Ilibinc/Library/hal/inc -Ilibinc/Library/BlueNRG1_Periph_Driver/inc -Ilibinc/Library/Bluetooth_LE/inc -Ilibinc/Library/CMSIS/Include -Ilibinc/Library/CMSIS/Device/ST/BlueNRG1/Include -Ilibinc/Library/SDK_Eval_BlueNRG1/inc -Ilibinc/Library/BLE_Application/OTA/inc -Ilibinc/Library/BLE_Application/Utils/inc -Ilibinc/Library/BLE_Application/layers_inc -IC:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include -IC:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include-fixed -IC:/armtoolslib/arm-none-eabi/include -IC:/armtoolslib/arm-none-eabi/include/machine -IC:/armtoolslib/arm-none-eabi/include/newlib-nano -IC:/armtoolslib/arm-none-eabi/include/sys
 
 # LD_SCRIPT: linker script
 LD_SCRIPT=./BlueNRG1.ld

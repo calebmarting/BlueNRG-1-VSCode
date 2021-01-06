@@ -14,4 +14,4 @@ obj/osal.o: libs/osal.c C:/armtoolslib/arm-none-eabi/include/string.h \
  C:/armtoolslib/arm-none-eabi/include/sys/lock.h \
  C:/armtoolslib/arm-none-eabi/include/sys/cdefs.h \
  C:/armtoolslib/arm-none-eabi/include/sys/string.h \
- C:/Users/cmart/ST/BlueNRG-1DKLib/Library/hal/inc/osal.h
+ libinc/Library/hal/inc/osal.h
