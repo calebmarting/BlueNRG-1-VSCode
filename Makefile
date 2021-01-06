@@ -6,8 +6,8 @@ SRCS = $(wildcard src/*.c) \
 # CONTEXT_SWITCH = libs/context_switch.s
 
 # S_SRCS =  $(wildcard aeabi-cortexm0/*.S)
-# S_SRCS = aeabi-cortexm0/uread4.S \
-# 	aeabi-cortexm0/memmove.S
+# S_SRCS = aeabi-cortexm0/uread4.S aeabi-cortexm0/memmove4.S 
+# \
 
 
 PRE_OBJS = $(wildcard precompiled/*.o)
@@ -50,17 +50,23 @@ RM      = rm -rf
 DEFINES = -DBLUENRG1_DEVICE -DDEBUG -DHS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ -DLS_SOURCE=LS_SOURCE_INTERNAL_RO -DSMPS_INDUCTOR=SMPS_INDUCTOR_4_7uH -DUSER_BUTTON=BUTTON_1 -Dmcpu=cortexm0
 
 #GCC FLAGS
-CFLAGS = -mthumb -mcpu=cortex-m0 -std=c99  $(DEFINES) -specs=nosys.specs
-CFLAGS += -Og -MD -std=c99 -c -fdata-sections -ffunction-sections  -Os -ffunction-sections -fdata-sections -g -fstack-usage -Wall -specs=nano.specs
+CFLAGS = -mthumb -mcpu=cortex-m0 $(DEFINES) -specs=nano.specs#-specs=nano.specs 
+CFLAGS +=  -MD -std=c99 -c -fdata-sections -ffunction-sections  -Og -fdata-sections -g -fstack-usage -Wall
 
 ASFLAGS = -Wall -ggdb -mthumb
 
 SFLAGS =  -mthumb -mcpu=cortex-m0 -g -Wa,--no-warn -x assembler-with-cpp # -specs=nano.specs
 
-LDFLAGS = -T$(LD_SCRIPT) -mthumb -specs=nosys.specs -nostartfiles -mcpu=cortex-m0 -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -nodefaultlibs "-Wl,-Map=BLE_Beacon.map" -static -Wl,--cref  -static -L./assembly  -Wl,--start-group -lc -lm -Wl,--end-group -lbluenrg1_stack -lcrypto -specs=nano.specs
+# LDFLAGS = -T$(LD_SCRIPT) -g -mthumb  -nostartfiles -mcpu=cortex-m0 -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -nodefaultlibs -static -L./assembly  -Wl,--start-group -lc -lm -Wl,--end-group -lbluenrg1_stack -lcrypto -specs=nano.specs
+# BETTER LDFLAGS = -T$(LD_SCRIPT) -g  -nostartfiles --gc-sections --defsym=malloc_getpagesize_P=0x80 -static -L./assembly -nodefaultlibs "-Map=BLE_Beacon.map" --cref --start-group -lc -lgcc -lm --end-group -lbluenrg1_stack -lcrypto #-specs=nano.specs
+# LDFLAGS = -T$(LD_SCRIPT) -g  --gc-sections --defsym=malloc_getpagesize_P=0x80  -L./assembly -nodefaultlibs "-Map=BLE_Beacon.map" --cref --start-group -lc -lgcc -lm --end-group -lbluenrg1_stack -lcrypto
+LDFLAGS = -T$(LD_SCRIPT) -mthumb -specs=nano.specs -nostartfiles -mcpu=cortex-m0 -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -nodefaultlibs "-Wl,-Map=BLE_Beacon.map" -static -Wl,--cref  -static -L./assembly  -Wl,--start-group -lc -lm -Wl,--end-group -lbluenrg1_stack -lcrypto
+
+
 
 # Rules to build bin
-all: bin/$(PROJECT).bin
+# all: bin/$(PROJECT).bin
+all: bin/$(PROJECT).elf
 
 $(OBJ)%.o: libs/%.s
 	$(CC) $(SFLAGS) -o $@ $^ 
@@ -76,8 +82,7 @@ $(OBJ)%.o: libs/%.c
 
 bin/$(PROJECT).elf: $(OBJS) $(S_OBJS) $(PRE_OBJS) $(C_SWITCH_OBJS)
 	$(LD) -o $@ $^ $(LDFLAGS)
-	# --verbose
-
+	
 bin/$(PROJECT).bin: bin/$(PROJECT).elf
 	$(OBJCOPY) -O binary $< $@
 

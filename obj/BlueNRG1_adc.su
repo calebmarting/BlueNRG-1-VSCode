@@ -1,5 +1,5 @@
-BlueNRG1_adc.c:93:7:ADC_ConvertDifferentialVoltage	24	static
-BlueNRG1_adc.c:126:7:ADC_ConvertSingleEndedVoltage	32	static
+BlueNRG1_adc.c:93:7:ADC_ConvertDifferentialVoltage	16	static
+BlueNRG1_adc.c:126:7:ADC_ConvertSingleEndedVoltage	24	static
 BlueNRG1_adc.c:162:7:ADC_ConvertBatterySensor	8	static
 BlueNRG1_adc.c:173:7:ADC_ConvertTemperatureSensor	8	static
 BlueNRG1_adc.c:177:7:ADC_ConvertTemperatureSensorFarenait	8	static
@@ -24,5 +24,5 @@ BlueNRG1_adc.c:610:6:ADC_ITConfig	0	static
 BlueNRG1_adc.c:676:10:ADC_GetRawData	0	static
 BlueNRG1_adc.c:640:7:ADC_GetConvertedData	16	static
 BlueNRG1_adc.c:701:6:ADC_Filter	0	static
-BlueNRG1_adc.c:723:9:ADC_SwCalibration	16	static
+BlueNRG1_adc.c:723:9:ADC_SwCalibration	24	static
 BlueNRG1_adc.c:760:7:ADC_CompensateOutputValue	8	static
