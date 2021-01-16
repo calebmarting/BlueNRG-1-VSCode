@@ -52,6 +52,7 @@ static IMU_6AXES_DrvTypeDef *Imu6AxesDrv = NULL;
 /* Private functions ---------------------------------------------------------*/
 #include "LSM6DS3_hal.h"
 
+
 /**
 * @brief  Main program
 */  
@@ -68,14 +69,12 @@ int main(void)
 
   SysCtrl_PeripheralClockCmd(CLOCK_PERIPH_GPIO, ENABLE);
 
-
   GPIO_InitType GPIO_InitStructure;
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_14;
   GPIO_InitStructure.GPIO_Mode = GPIO_Output;
   GPIO_InitStructure.GPIO_Pull = ENABLE;
   GPIO_InitStructure.GPIO_HighPwr = ENABLE;
   GPIO_Init(&GPIO_InitStructure);
-
 
   /* Put the LEDs off */
   GPIO_WriteBit(GPIO_Pin_14, LED_ON);
@@ -96,8 +95,6 @@ int main(void)
  InitStructure.X_X_Axis         = 1;
  InitStructure.X_Y_Axis         = 1;
  InitStructure.X_Z_Axis         = 1;
-
-  printf("oof\n");
 
  /* LSM6DS3 initiliazation */
  Imu6AxesDrv->Init(&InitStructure);

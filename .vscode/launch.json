@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
 	{
-        "name": "Debug (OpenOCD)",
+        "name": "Debug (ST-Link)",
         //Comment prelaunch task to disable building before upload
         "preLaunchTask": "Make",
         "cwd": "${workspaceRoot}",
