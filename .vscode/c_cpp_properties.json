@@ -15,8 +15,8 @@
                 "${workspaceRoot}/libinc/Library/BLE_Application/Utils/inc",
                 "${workspaceRoot}/libinc/Library/BLE_Application/layers_inc",
                 "${config:cortex-debug.armToolchainPath}/../arm-none-eabi/include",
-                "${config:cortex-debug.armToolchainPath}/../lib/gcc/arm-none-eabi/8.2.1/include",
-                "${config:cortex-debug.armToolchainPath}/../lib/gcc/arm-none-eabi/8.2.1/include-fixed",
+                "${config:cortex-debug.armToolchainPath}/../lib/gcc/arm-none-eabi/${config:armToolchainVersion}/include",
+                "${config:cortex-debug.armToolchainPath}/../lib/gcc/arm-none-eabi/${config:armToolchainVersion}/include-fixed",
                 "${config:cortex-debug.armToolchainPath}/../arm-none-eabi/include/machine",
                 "${config:cortex-debug.armToolchainPath}/../arm-none-eabi/include/newlib-nano",
                 "${config:cortex-debug.armToolchainPath}/../arm-none-eabi/include/sys"
@@ -35,16 +35,13 @@
                     "${workspaceRoot}/libinc//Library/BLE_Application/OTA/inc",
                     "${workspaceRoot}/libinc//Library/BLE_Application/Utils/inc",
                     "${workspaceRoot}/libinc//Library/BLE_Application/layers_inc",
-                    "${config:cortex-debug.armToolchainPath}/../lib/gcc/arm-none-eabi/8.2.1/include",
-                    "${config:cortex-debug.armToolchainPath}/../lib/gcc/arm-none-eabi/8.2.1/include-fixed",
+                    "${config:cortex-debug.armToolchainPath}/../lib/gcc/arm-none-eabi/${config:armToolchainVersion}/include",
+                    "${config:cortex-debug.armToolchainPath}/../lib/gcc/arm-none-eabi/${config:armToolchainVersion}/include-fixed",
                     "${config:cortex-debug.armToolchainPath}/../arm-none-eabi/include"
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
-            },
-            // "compilerPath": "C:/MinGW/bin/gcc.exe",
-            // "cppStandard": "c++17",
-            // "cStandard": "c99"
+            }
         }
     ],
     "version": 4

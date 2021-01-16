@@ -199,7 +199,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xf8 obj/BlueNRG1_adc.o
  .debug_ranges  0x00000000       0xe8 obj/BlueNRG1_adc.o
- .debug_line    0x00000000      0x409 obj/BlueNRG1_adc.o
+ .debug_line    0x00000000      0x427 obj/BlueNRG1_adc.o
  .debug_str     0x00000000      0x918 obj/BlueNRG1_adc.o
  .comment       0x00000000       0x80 obj/BlueNRG1_adc.o
  .debug_frame   0x00000000      0x230 obj/BlueNRG1_adc.o
@@ -260,7 +260,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x88 obj/BlueNRG1_flash.o
  .debug_ranges  0x00000000       0x78 obj/BlueNRG1_flash.o
- .debug_line    0x00000000      0x24e obj/BlueNRG1_flash.o
+ .debug_line    0x00000000      0x26c obj/BlueNRG1_flash.o
  .debug_str     0x00000000      0x63d obj/BlueNRG1_flash.o
  .comment       0x00000000       0x80 obj/BlueNRG1_flash.o
  .debug_frame   0x00000000      0x110 obj/BlueNRG1_flash.o
@@ -327,7 +327,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xa8 obj/BlueNRG1_mft.o
  .debug_ranges  0x00000000       0x98 obj/BlueNRG1_mft.o
- .debug_line    0x00000000      0x2d6 obj/BlueNRG1_mft.o
+ .debug_line    0x00000000      0x2f4 obj/BlueNRG1_mft.o
  .debug_str     0x00000000      0x840 obj/BlueNRG1_mft.o
  .comment       0x00000000       0x80 obj/BlueNRG1_mft.o
  .debug_frame   0x00000000      0x148 obj/BlueNRG1_mft.o
@@ -367,7 +367,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x70 obj/BlueNRG1_pka.o
  .debug_ranges  0x00000000       0x78 obj/BlueNRG1_pka.o
- .debug_line    0x00000000      0x280 obj/BlueNRG1_pka.o
+ .debug_line    0x00000000      0x2ad obj/BlueNRG1_pka.o
  .debug_str     0x00000000      0x606 obj/BlueNRG1_pka.o
  .comment       0x00000000       0x80 obj/BlueNRG1_pka.o
  .debug_frame   0x00000000       0xd8 obj/BlueNRG1_pka.o
@@ -420,7 +420,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0xb0 obj/BlueNRG1_radio.o
  .debug_ranges  0x00000000       0xa0 obj/BlueNRG1_radio.o
- .debug_line    0x00000000      0x551 obj/BlueNRG1_radio.o
+ .debug_line    0x00000000      0x57e obj/BlueNRG1_radio.o
  .debug_str     0x00000000     0x1038 obj/BlueNRG1_radio.o
  .comment       0x00000000       0x80 obj/BlueNRG1_radio.o
  .debug_frame   0x00000000      0x1dc obj/BlueNRG1_radio.o
@@ -438,7 +438,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x28 obj/BlueNRG1_rng.o
  .debug_ranges  0x00000000       0x18 obj/BlueNRG1_rng.o
- .debug_line    0x00000000      0x14f obj/BlueNRG1_rng.o
+ .debug_line    0x00000000      0x16d obj/BlueNRG1_rng.o
  .debug_str     0x00000000      0x478 obj/BlueNRG1_rng.o
  .comment       0x00000000       0x80 obj/BlueNRG1_rng.o
  .debug_frame   0x00000000       0x30 obj/BlueNRG1_rng.o
@@ -480,7 +480,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x88 obj/BlueNRG1_rtc.o
  .debug_ranges  0x00000000       0x78 obj/BlueNRG1_rtc.o
- .debug_line    0x00000000      0x2a3 obj/BlueNRG1_rtc.o
+ .debug_line    0x00000000      0x2c1 obj/BlueNRG1_rtc.o
  .debug_str     0x00000000      0x806 obj/BlueNRG1_rtc.o
  .comment       0x00000000       0x80 obj/BlueNRG1_rtc.o
  .debug_frame   0x00000000      0x114 obj/BlueNRG1_rtc.o
@@ -611,7 +611,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000      0x130 obj/BlueNRG1_timer.o
  .debug_ranges  0x00000000      0x120 obj/BlueNRG1_timer.o
- .debug_line    0x00000000      0x5cf obj/BlueNRG1_timer.o
+ .debug_line    0x00000000      0x5fc obj/BlueNRG1_timer.o
  .debug_str     0x00000000     0x10cd obj/BlueNRG1_timer.o
  .comment       0x00000000       0x80 obj/BlueNRG1_timer.o
  .debug_frame   0x00000000      0x328 obj/BlueNRG1_timer.o
@@ -692,7 +692,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x60 obj/BlueNRG1_wdg.o
  .debug_ranges  0x00000000       0x50 obj/BlueNRG1_wdg.o
- .debug_line    0x00000000      0x1ce obj/BlueNRG1_wdg.o
+ .debug_line    0x00000000      0x1ec obj/BlueNRG1_wdg.o
  .debug_str     0x00000000      0x587 obj/BlueNRG1_wdg.o
  .comment       0x00000000       0x80 obj/BlueNRG1_wdg.o
  .debug_frame   0x00000000       0xa0 obj/BlueNRG1_wdg.o
@@ -719,7 +719,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x38 obj/clock.o
  .debug_ranges  0x00000000       0x28 obj/clock.o
- .debug_line    0x00000000      0x1a1 obj/clock.o
+ .debug_line    0x00000000      0x1bf obj/clock.o
  .debug_str     0x00000000      0x61b obj/clock.o
  .comment       0x00000000       0x80 obj/clock.o
  .debug_frame   0x00000000       0x5c obj/clock.o
@@ -732,7 +732,7 @@ Discarded input sections
  .debug_abbrev  0x00000000      0x17a obj/eabi.o
  .debug_aranges
                 0x00000000       0x18 obj/eabi.o
- .debug_line    0x00000000       0xa6 obj/eabi.o
+ .debug_line    0x00000000       0xc4 obj/eabi.o
  .debug_str     0x00000000      0x558 obj/eabi.o
  .comment       0x00000000       0x80 obj/eabi.o
  .ARM.attributes
@@ -779,7 +779,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x30 obj/osal.o
  .debug_ranges  0x00000000       0x20 obj/osal.o
- .debug_line    0x00000000      0x119 obj/osal.o
+ .debug_line    0x00000000      0x146 obj/osal.o
  .debug_str     0x00000000      0x5a1 obj/osal.o
  .comment       0x00000000       0x80 obj/osal.o
  .debug_frame   0x00000000       0x58 obj/osal.o
@@ -806,7 +806,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x48 obj/SDK_EVAL_Button.o
  .debug_ranges  0x00000000       0x38 obj/SDK_EVAL_Button.o
- .debug_line    0x00000000      0x23b obj/SDK_EVAL_Button.o
+ .debug_line    0x00000000      0x259 obj/SDK_EVAL_Button.o
  .debug_str     0x00000000      0x7ba obj/SDK_EVAL_Button.o
  .comment       0x00000000       0x80 obj/SDK_EVAL_Button.o
  .debug_frame   0x00000000       0xa4 obj/SDK_EVAL_Button.o
@@ -903,7 +903,7 @@ Discarded input sections
  .debug_aranges
                 0x00000000       0x50 obj/sleep.o
  .debug_ranges  0x00000000       0x40 obj/sleep.o
- .debug_line    0x00000000      0x5f1 obj/sleep.o
+ .debug_line    0x00000000      0x61e obj/sleep.o
  .debug_str     0x00000000     0x22f0 obj/sleep.o
  .comment       0x00000000       0x80 obj/sleep.o
  .debug_frame   0x00000000       0xbc obj/sleep.o
@@ -2139,23 +2139,23 @@ OUTPUT(bin/blink.elf elf32-littlearm)
  .debug_ranges  0x000005a0       0x60 obj/SDK_EVAL_SPI.o
  .debug_ranges  0x00000600      0x120 obj/system_bluenrg1.o
 
-.debug_line     0x00000000     0x3067
- .debug_line    0x00000000      0x224 obj/BlueNRG1_it.o
- .debug_line    0x00000224      0x2ae obj/SPI_Master_w_Sensor_main.o
- .debug_line    0x000004d2      0x251 obj/BlueNRG1_dma.o
- .debug_line    0x00000723      0x2e2 obj/BlueNRG1_gpio.o
- .debug_line    0x00000a05      0x3c4 obj/BlueNRG1_spi.o
- .debug_line    0x00000dc9      0x1ec obj/BlueNRG1_sysCtrl.o
- .debug_line    0x00000fb5      0x3b2 obj/BlueNRG1_uart.o
- .debug_line    0x00001367      0x6fc obj/LSM6DS3.o
- .debug_line    0x00001a63      0x1d8 obj/misc.o
- .debug_line    0x00001c3b      0x25b obj/miscutil.o
- .debug_line    0x00001e96      0x4c0 obj/SDK_EVAL_Com.o
- .debug_line    0x00002356      0x152 obj/SDK_EVAL_Config.o
- .debug_line    0x000024a8      0x214 obj/SDK_EVAL_Led.o
- .debug_line    0x000026bc      0x3b8 obj/SDK_EVAL_SPI.o
- .debug_line    0x00002a74      0x554 obj/system_bluenrg1.o
- .debug_line    0x00002fc8       0x9f precompiled/context_switch.o
+.debug_line     0x00000000     0x3292
+ .debug_line    0x00000000      0x242 obj/BlueNRG1_it.o
+ .debug_line    0x00000242      0x2ea obj/SPI_Master_w_Sensor_main.o
+ .debug_line    0x0000052c      0x26f obj/BlueNRG1_dma.o
+ .debug_line    0x0000079b      0x300 obj/BlueNRG1_gpio.o
+ .debug_line    0x00000a9b      0x3e2 obj/BlueNRG1_spi.o
+ .debug_line    0x00000e7d      0x20a obj/BlueNRG1_sysCtrl.o
+ .debug_line    0x00001087      0x3d0 obj/BlueNRG1_uart.o
+ .debug_line    0x00001457      0x729 obj/LSM6DS3.o
+ .debug_line    0x00001b80      0x1f6 obj/misc.o
+ .debug_line    0x00001d76      0x288 obj/miscutil.o
+ .debug_line    0x00001ffe      0x4fc obj/SDK_EVAL_Com.o
+ .debug_line    0x000024fa      0x170 obj/SDK_EVAL_Config.o
+ .debug_line    0x0000266a      0x232 obj/SDK_EVAL_Led.o
+ .debug_line    0x0000289c      0x3d6 obj/SDK_EVAL_SPI.o
+ .debug_line    0x00002c72      0x581 obj/system_bluenrg1.o
+ .debug_line    0x000031f3       0x9f precompiled/context_switch.o
 
 .debug_str      0x00000000     0x2f3c
  .debug_str     0x00000000      0x658 obj/BlueNRG1_it.o

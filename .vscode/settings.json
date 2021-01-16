@@ -7,6 +7,9 @@
         "url": "schemaURL"
     }
     ],
+
+    "armToolchainVersion": "8.2.1",
     "cortex-debug.armToolchainPath": "C:/PROGRA~2/GNUTOO~1/82018-~1/bin", 
     "cortex-debug.openocdPath": "${workspaceRoot}/openocd-0.11.0-rc1/bin/openocd.exe"
+    
 }
