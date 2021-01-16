@@ -26,4 +26,4 @@ system_bluenrg1.c:758:6:SET_BORconfigStatus	0	static
 system_bluenrg1.c:272:5:__low_level_init	24	static
 system_bluenrg1.c:341:6:RESET_HANDLER	8	static
 system_bluenrg1.c:817:6:DeviceConfiguration	56	static
-system_bluenrg1.c:955:6:SystemInit	32	static
+system_bluenrg1.c:954:6:SystemInit	32	static

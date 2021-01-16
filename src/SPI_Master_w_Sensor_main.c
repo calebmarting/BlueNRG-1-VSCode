@@ -87,12 +87,12 @@ int main(void)
  Imu6AxesDrv = &LSM6DS3Drv;
 
  InitStructure.G_FullScale      = 125;
- InitStructure.G_OutputDataRate = 13;
+ InitStructure.G_OutputDataRate = 52;
  InitStructure.G_X_Axis         = 1;
  InitStructure.G_Y_Axis         = 1;
  InitStructure.G_Z_Axis         = 1;
  InitStructure.X_FullScale      = 2;
- InitStructure.X_OutputDataRate = 13;
+ InitStructure.X_OutputDataRate = 52;
  InitStructure.X_X_Axis         = 1;
  InitStructure.X_Y_Axis         = 1;
  InitStructure.X_Z_Axis         = 1;

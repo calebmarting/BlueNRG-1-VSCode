@@ -72,14 +72,24 @@ c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/ar
                               c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fvwrite.o) (__aeabi_idiv)
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
                               c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+                              obj/LSM6DS3.o (__aeabi_fcmple)
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(addsf3.o)
                               obj/BlueNRG1_adc.o (__aeabi_fadd)
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divsf3.o)
                               obj/BlueNRG1_adc.o (__aeabi_fdiv)
+c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(eqsf2.o)
+                              c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o) (__eqsf2)
+c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(gesf2.o)
+                              c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o) (__gesf2)
+c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(lesf2.o)
+                              c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o) (__lesf2)
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(mulsf3.o)
                               obj/BlueNRG1_adc.o (__aeabi_fmul)
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(subsf3.o)
                               obj/BlueNRG1_adc.o (__aeabi_fsub)
+c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(fixsfsi.o)
+                              obj/LSM6DS3.o (__aeabi_f2iz)
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatsisf.o)
                               obj/BlueNRG1_adc.o (__aeabi_i2f)
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatunsisf.o)
@@ -1122,6 +1132,10 @@ Discarded input sections
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
                 0x00000000       0x1e c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+ .ARM.attributes
+                0x00000000       0x1e c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
  .text          0x00000000      0x324 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(addsf3.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(addsf3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(addsf3.o)
@@ -1135,10 +1149,23 @@ Discarded input sections
  .debug_frame   0x00000000       0x3c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divsf3.o)
  .ARM.attributes
                 0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divsf3.o)
- .text          0x00000000      0x240 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(mulsf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(eqsf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(eqsf2.o)
+ .debug_frame   0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(eqsf2.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(eqsf2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(gesf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(gesf2.o)
+ .debug_frame   0x00000000       0x30 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(gesf2.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(gesf2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(lesf2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(lesf2.o)
+ .debug_frame   0x00000000       0x30 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(lesf2.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(lesf2.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(mulsf3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(mulsf3.o)
- .rodata        0x00000000       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(mulsf3.o)
  .debug_frame   0x00000000       0x3c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(mulsf3.o)
  .ARM.attributes
                 0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(mulsf3.o)
@@ -1148,13 +1175,16 @@ Discarded input sections
  .debug_frame   0x00000000       0x38 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(subsf3.o)
  .ARM.attributes
                 0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(subsf3.o)
- .text          0x00000000       0xa0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatsisf.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(fixsfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(fixsfsi.o)
+ .debug_frame   0x00000000       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(fixsfsi.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(fixsfsi.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatsisf.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatsisf.o)
  .debug_frame   0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatsisf.o)
  .ARM.attributes
                 0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatsisf.o)
- .text          0x00000000       0x8c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatunsisf.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatunsisf.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatunsisf.o)
  .debug_frame   0x00000000       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatunsisf.o)
@@ -1198,7 +1228,6 @@ Discarded input sections
  .debug_frame   0x00000000       0x30 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(truncdfsf2.o)
  .ARM.attributes
                 0x00000000       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(truncdfsf2.o)
- .text          0x00000000       0x3c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzsi2.o)
  .data          0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzsi2.o)
  .bss           0x00000000        0x0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzsi2.o)
  .ARM.attributes
@@ -1291,7 +1320,7 @@ LOAD ./assembly\libcrypto.a
                 0x10040000                __vector_table
                 0x100400c0                . = ALIGN (0x4)
 
-.text           0x100400c0     0x2e34
+.text           0x100400c0     0x35b4
                 0x100400c0                . = ALIGN (0x4)
  *(.cmd_call_table)
  *(.text)
@@ -1305,441 +1334,470 @@ LOAD ./assembly\libcrypto.a
  .text          0x10040270        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
                 0x10040270                __aeabi_idiv0
                 0x10040270                __aeabi_ldiv0
+ .text          0x10040274       0x74 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+                0x10040274                __aeabi_cfrcmple
+                0x1004027c                __aeabi_cfcmpeq
+                0x1004027c                __aeabi_cfcmple
+                0x1004028c                __aeabi_fcmpeq
+                0x10040298                __aeabi_fcmplt
+                0x100402ac                __aeabi_fcmple
+                0x100402c0                __aeabi_fcmpgt
+                0x100402d4                __aeabi_fcmpge
+ .text          0x100402e8       0x4c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(eqsf2.o)
+                0x100402e8                __eqsf2
+                0x100402e8                __nesf2
+ .text          0x10040334       0x80 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(gesf2.o)
+                0x10040334                __gesf2
+                0x10040334                __gtsf2
+ .text          0x100403b4       0x84 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(lesf2.o)
+                0x100403b4                __ltsf2
+                0x100403b4                __lesf2
+ .text          0x10040438      0x240 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(mulsf3.o)
+                0x10040438                __aeabi_fmul
+ .text          0x10040678       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(fixsfsi.o)
+                0x10040678                __aeabi_f2iz
+ .text          0x100406b8       0xa0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatsisf.o)
+                0x100406b8                __aeabi_i2f
+ .text          0x10040758       0x8c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatunsisf.o)
+                0x10040758                __aeabi_ui2f
+ .text          0x100407e4       0x3c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_clzsi2.o)
+                0x100407e4                __clzsi2
  *(.text*)
  .text.NMI_Handler
-                0x10040274        0x2 obj/BlueNRG1_it.o
-                0x10040274                NMI_Handler
+                0x10040820        0x2 obj/BlueNRG1_it.o
+                0x10040820                NMI_Handler
  .text.HardFault_Handler
-                0x10040276        0x2 obj/BlueNRG1_it.o
-                0x10040276                HardFault_Handler
+                0x10040822        0x2 obj/BlueNRG1_it.o
+                0x10040822                HardFault_Handler
  .text.SVC_Handler
-                0x10040278        0x2 obj/BlueNRG1_it.o
-                0x10040278                SVC_Handler
+                0x10040824        0x2 obj/BlueNRG1_it.o
+                0x10040824                SVC_Handler
  .text.SysTick_Handler
-                0x1004027a        0x2 obj/BlueNRG1_it.o
-                0x1004027a                SysTick_Handler
+                0x10040826        0x2 obj/BlueNRG1_it.o
+                0x10040826                SysTick_Handler
  .text.GPIO_Handler
-                0x1004027c       0x24 obj/BlueNRG1_it.o
-                0x1004027c                GPIO_Handler
+                0x10040828       0x24 obj/BlueNRG1_it.o
+                0x10040828                GPIO_Handler
  .text.SPI_Handler
-                0x100402a0        0x8 obj/BlueNRG1_it.o
-                0x100402a0                SPI_Handler
+                0x1004084c        0x8 obj/BlueNRG1_it.o
+                0x1004084c                SPI_Handler
  .text.DMA_Handler
-                0x100402a8        0x8 obj/BlueNRG1_it.o
-                0x100402a8                DMA_Handler
- .text.main     0x100402b0       0xdc obj/SPI_Master_w_Sensor_main.o
-                0x100402b0                main
+                0x10040854        0x8 obj/BlueNRG1_it.o
+                0x10040854                DMA_Handler
+ .text.main     0x1004085c       0xdc obj/SPI_Master_w_Sensor_main.o
+                0x1004085c                main
  .text.DMA_GetFlagStatus
-                0x1004038c       0x12 obj/BlueNRG1_dma.o
-                0x1004038c                DMA_GetFlagStatus
+                0x10040938       0x12 obj/BlueNRG1_dma.o
+                0x10040938                DMA_GetFlagStatus
  .text.DMA_ClearFlag
-                0x1004039e        0x8 obj/BlueNRG1_dma.o
-                0x1004039e                DMA_ClearFlag
+                0x1004094a        0x8 obj/BlueNRG1_dma.o
+                0x1004094a                DMA_ClearFlag
  .text.GPIO_Init
-                0x100403a6       0xbe obj/BlueNRG1_gpio.o
-                0x100403a6                GPIO_Init
+                0x10040952       0xbe obj/BlueNRG1_gpio.o
+                0x10040952                GPIO_Init
  .text.GPIO_StructInit
-                0x10040464        0xc obj/BlueNRG1_gpio.o
-                0x10040464                GPIO_StructInit
+                0x10040a10        0xc obj/BlueNRG1_gpio.o
+                0x10040a10                GPIO_StructInit
  .text.GPIO_SetBits
-                0x10040470        0x8 obj/BlueNRG1_gpio.o
-                0x10040470                GPIO_SetBits
+                0x10040a1c        0x8 obj/BlueNRG1_gpio.o
+                0x10040a1c                GPIO_SetBits
  .text.GPIO_ResetBits
-                0x10040478        0x8 obj/BlueNRG1_gpio.o
-                0x10040478                GPIO_ResetBits
+                0x10040a24        0x8 obj/BlueNRG1_gpio.o
+                0x10040a24                GPIO_ResetBits
  .text.GPIO_WriteBit
-                0x10040480       0x14 obj/BlueNRG1_gpio.o
-                0x10040480                GPIO_WriteBit
+                0x10040a2c       0x14 obj/BlueNRG1_gpio.o
+                0x10040a2c                GPIO_WriteBit
  .text.GPIO_ToggleBits
-                0x10040494        0xc obj/BlueNRG1_gpio.o
-                0x10040494                GPIO_ToggleBits
+                0x10040a40        0xc obj/BlueNRG1_gpio.o
+                0x10040a40                GPIO_ToggleBits
  .text.GPIO_EXTIConfig
-                0x100404a0       0x64 obj/BlueNRG1_gpio.o
-                0x100404a0                GPIO_EXTIConfig
+                0x10040a4c       0x64 obj/BlueNRG1_gpio.o
+                0x10040a4c                GPIO_EXTIConfig
  .text.GPIO_EXTICmd
-                0x10040504       0x1c obj/BlueNRG1_gpio.o
-                0x10040504                GPIO_EXTICmd
+                0x10040ab0       0x1c obj/BlueNRG1_gpio.o
+                0x10040ab0                GPIO_EXTICmd
  .text.GPIO_ClearITPendingBit
-                0x10040520        0x8 obj/BlueNRG1_gpio.o
-                0x10040520                GPIO_ClearITPendingBit
+                0x10040acc        0x8 obj/BlueNRG1_gpio.o
+                0x10040acc                GPIO_ClearITPendingBit
  .text.GPIO_GetITPendingBit
-                0x10040528       0x12 obj/BlueNRG1_gpio.o
-                0x10040528                GPIO_GetITPendingBit
- *fill*         0x1004053a        0x2 
+                0x10040ad4       0x12 obj/BlueNRG1_gpio.o
+                0x10040ad4                GPIO_GetITPendingBit
+ *fill*         0x10040ae6        0x2 
  .text.SPI_SetBaudrate
-                0x1004053c       0x50 obj/BlueNRG1_spi.o
-                0x1004053c                SPI_SetBaudrate
+                0x10040ae8       0x50 obj/BlueNRG1_spi.o
+                0x10040ae8                SPI_SetBaudrate
  .text.SPI_Init
-                0x1004058c       0x5c obj/BlueNRG1_spi.o
-                0x1004058c                SPI_Init
+                0x10040b38       0x5c obj/BlueNRG1_spi.o
+                0x10040b38                SPI_Init
  .text.SPI_StructInit
-                0x100405e8       0x18 obj/BlueNRG1_spi.o
-                0x100405e8                SPI_StructInit
- .text.SPI_Cmd  0x10040600       0x20 obj/BlueNRG1_spi.o
-                0x10040600                SPI_Cmd
+                0x10040b94       0x18 obj/BlueNRG1_spi.o
+                0x10040b94                SPI_StructInit
+ .text.SPI_Cmd  0x10040bac       0x20 obj/BlueNRG1_spi.o
+                0x10040bac                SPI_Cmd
  .text.SPI_ITConfig
-                0x10040620       0x1c obj/BlueNRG1_spi.o
-                0x10040620                SPI_ITConfig
+                0x10040bcc       0x1c obj/BlueNRG1_spi.o
+                0x10040bcc                SPI_ITConfig
  .text.SPI_SendData
-                0x1004063c        0xc obj/BlueNRG1_spi.o
-                0x1004063c                SPI_SendData
+                0x10040be8        0xc obj/BlueNRG1_spi.o
+                0x10040be8                SPI_SendData
  .text.SPI_ReceiveData
-                0x10040648        0xc obj/BlueNRG1_spi.o
-                0x10040648                SPI_ReceiveData
+                0x10040bf4        0xc obj/BlueNRG1_spi.o
+                0x10040bf4                SPI_ReceiveData
  .text.SPI_GetFlagStatus
-                0x10040654       0x14 obj/BlueNRG1_spi.o
-                0x10040654                SPI_GetFlagStatus
+                0x10040c00       0x14 obj/BlueNRG1_spi.o
+                0x10040c00                SPI_GetFlagStatus
  .text.SPI_GetITStatus
-                0x10040668       0x14 obj/BlueNRG1_spi.o
-                0x10040668                SPI_GetITStatus
+                0x10040c14       0x14 obj/BlueNRG1_spi.o
+                0x10040c14                SPI_GetITStatus
  .text.SPI_ClearRXFIFO
-                0x1004067c       0x14 obj/BlueNRG1_spi.o
-                0x1004067c                SPI_ClearRXFIFO
+                0x10040c28       0x14 obj/BlueNRG1_spi.o
+                0x10040c28                SPI_ClearRXFIFO
  .text.SPI_ClearTXFIFO
-                0x10040690       0x30 obj/BlueNRG1_spi.o
-                0x10040690                SPI_ClearTXFIFO
+                0x10040c3c       0x30 obj/BlueNRG1_spi.o
+                0x10040c3c                SPI_ClearTXFIFO
  .text.SPI_SetMasterCommunicationMode
-                0x100406c0       0x20 obj/BlueNRG1_spi.o
-                0x100406c0                SPI_SetMasterCommunicationMode
+                0x10040c6c       0x20 obj/BlueNRG1_spi.o
+                0x10040c6c                SPI_SetMasterCommunicationMode
  .text.SPI_SetDummyCharacter
-                0x100406e0        0xc obj/BlueNRG1_spi.o
-                0x100406e0                SPI_SetDummyCharacter
+                0x10040c8c        0xc obj/BlueNRG1_spi.o
+                0x10040c8c                SPI_SetDummyCharacter
  .text.SysCtrl_PeripheralClockCmd
-                0x100406ec       0x1c obj/BlueNRG1_sysCtrl.o
-                0x100406ec                SysCtrl_PeripheralClockCmd
+                0x10040c98       0x1c obj/BlueNRG1_sysCtrl.o
+                0x10040c98                SysCtrl_PeripheralClockCmd
  .text.SysCtrl_GetWakeupResetReason
-                0x10040708       0xfc obj/BlueNRG1_sysCtrl.o
-                0x10040708                SysCtrl_GetWakeupResetReason
+                0x10040cb4       0xfc obj/BlueNRG1_sysCtrl.o
+                0x10040cb4                SysCtrl_GetWakeupResetReason
  .text.UART_Cmd
-                0x10040804       0x20 obj/BlueNRG1_uart.o
-                0x10040804                UART_Cmd
+                0x10040db0       0x20 obj/BlueNRG1_uart.o
+                0x10040db0                UART_Cmd
  .text.UART_Init
-                0x10040824      0x180 obj/BlueNRG1_uart.o
-                0x10040824                UART_Init
+                0x10040dd0      0x180 obj/BlueNRG1_uart.o
+                0x10040dd0                UART_Init
  .text.UART_SendData
-                0x100409a4       0x10 obj/BlueNRG1_uart.o
-                0x100409a4                UART_SendData
+                0x10040f50       0x10 obj/BlueNRG1_uart.o
+                0x10040f50                UART_SendData
  .text.UART_GetFlagStatus
-                0x100409b4       0x28 obj/BlueNRG1_uart.o
-                0x100409b4                UART_GetFlagStatus
+                0x10040f60       0x28 obj/BlueNRG1_uart.o
+                0x10040f60                UART_GetFlagStatus
  .text.UART_RxFifoIrqLevelConfig
-                0x100409dc       0x20 obj/BlueNRG1_uart.o
-                0x100409dc                UART_RxFifoIrqLevelConfig
+                0x10040f88       0x20 obj/BlueNRG1_uart.o
+                0x10040f88                UART_RxFifoIrqLevelConfig
  .text.LSM6DS3_G_Get_FS
-                0x100409fc       0x9c obj/LSM6DS3.o
+                0x10040fa8       0x9c obj/LSM6DS3.o
  .text.LSM6DS3_G_GetSensitivity
-                0x10040a98       0x9c obj/LSM6DS3.o
+                0x10041044       0x9c obj/LSM6DS3.o
  .text.LSM6DS3_G_Get_ODR
-                0x10040b34       0xc0 obj/LSM6DS3.o
+                0x100410e0       0xc0 obj/LSM6DS3.o
  .text.LSM6DS3_X_Get_FS
-                0x10040bf4       0x66 obj/LSM6DS3.o
- *fill*         0x10040c5a        0x2 
+                0x100411a0       0x66 obj/LSM6DS3.o
+ *fill*         0x10041206        0x2 
  .text.LSM6DS3_X_GetSensitivity
-                0x10040c5c       0x70 obj/LSM6DS3.o
+                0x10041208       0x70 obj/LSM6DS3.o
  .text.LSM6DS3_X_Get_ODR
-                0x10040ccc       0xe0 obj/LSM6DS3.o
+                0x10041278       0xe0 obj/LSM6DS3.o
  .text.LSM6DS3_G_GetAxesRaw
-                0x10040dac       0x66 obj/LSM6DS3.o
+                0x10041358       0x66 obj/LSM6DS3.o
  .text.LSM6DS3_G_GetAxes
-                0x10040e12       0x3e obj/LSM6DS3.o
+                0x100413be       0x6c obj/LSM6DS3.o
  .text.LSM6DS3_X_GetAxesRaw
-                0x10040e50       0x66 obj/LSM6DS3.o
+                0x1004142a       0x66 obj/LSM6DS3.o
  .text.LSM6DS3_X_GetAxes
-                0x10040eb6       0x3e obj/LSM6DS3.o
+                0x10041490       0x6c obj/LSM6DS3.o
  .text.LSM6DS3_Read_XG_ID
-                0x10040ef4       0x14 obj/LSM6DS3.o
+                0x100414fc       0x14 obj/LSM6DS3.o
  .text.LSM6DS3_G_Set_FS
-                0x10040f08       0xb8 obj/LSM6DS3.o
+                0x10041510       0xf8 obj/LSM6DS3.o
  .text.LSM6DS3_G_Set_ODR
-                0x10040fc0       0x72 obj/LSM6DS3.o
+                0x10041608       0xe0 obj/LSM6DS3.o
  .text.LSM6DS3_X_Set_FS
-                0x10041032       0x5c obj/LSM6DS3.o
- *fill*         0x1004108e        0x2 
+                0x100416e8       0x7a obj/LSM6DS3.o
+ *fill*         0x10041762        0x2 
  .text.LSM6DS3_X_Set_ODR
-                0x10041090       0xac obj/LSM6DS3.o
+                0x10041764      0x108 obj/LSM6DS3.o
  .text.LSM6DS3_Common_Sensor_Enable
-                0x1004113c       0x74 obj/LSM6DS3.o
+                0x1004186c       0x74 obj/LSM6DS3.o
  .text.LSM6DS3_G_Set_Axes_Status
-                0x100411b0       0x66 obj/LSM6DS3.o
+                0x100418e0       0x66 obj/LSM6DS3.o
  .text.LSM6DS3_X_Set_Axes_Status
-                0x10041216       0x66 obj/LSM6DS3.o
+                0x10041946       0x66 obj/LSM6DS3.o
  .text.LSM6DS3_Init
-                0x1004127c      0x190 obj/LSM6DS3.o
+                0x100419ac      0x1a0 obj/LSM6DS3.o
  .text.NVIC_Init
-                0x1004140c       0x94 obj/misc.o
-                0x1004140c                NVIC_Init
+                0x10041b4c       0x94 obj/misc.o
+                0x10041b4c                NVIC_Init
  .text.HAL_GetPartInfo
-                0x100414a0       0x68 obj/miscutil.o
-                0x100414a0                HAL_GetPartInfo
+                0x10041be0       0x68 obj/miscutil.o
+                0x10041be0                HAL_GetPartInfo
  .text.SdkEvalUart_Send_Data
-                0x10041508       0x16 obj/SDK_EVAL_Com.o
+                0x10041c48       0x16 obj/SDK_EVAL_Com.o
  .text.SdkEvalComUartInit
-                0x1004151e       0x5c obj/SDK_EVAL_Com.o
-                0x1004151e                SdkEvalComUartInit
+                0x10041c5e       0x5c obj/SDK_EVAL_Com.o
+                0x10041c5e                SdkEvalComUartInit
  .text.SdkEvalComIOSendData
-                0x1004157a        0x8 obj/SDK_EVAL_Com.o
-                0x1004157a                SdkEvalComIOSendData
- *fill*         0x10041582        0x2 
+                0x10041cba        0x8 obj/SDK_EVAL_Com.o
+                0x10041cba                SdkEvalComIOSendData
+ *fill*         0x10041cc2        0x2 
  .text.Read_Buffer_Pop
-                0x10041584       0x40 obj/SDK_EVAL_Com.o
-                0x10041584                Read_Buffer_Pop
- .text._sbrk    0x100415c4       0x44 obj/SDK_EVAL_Com.o
-                0x100415c4                _sbrk
- .text._close   0x10041608        0x6 obj/SDK_EVAL_Com.o
-                0x10041608                _close
- .text._fstat   0x1004160e        0xa obj/SDK_EVAL_Com.o
-                0x1004160e                _fstat
- .text._isatty  0x10041618        0x4 obj/SDK_EVAL_Com.o
-                0x10041618                _isatty
- .text._lseek   0x1004161c        0x4 obj/SDK_EVAL_Com.o
-                0x1004161c                _lseek
- .text._write   0x10041620       0x1a obj/SDK_EVAL_Com.o
-                0x10041620                _write
- .text._read    0x1004163a       0x24 obj/SDK_EVAL_Com.o
-                0x1004163a                _read
- *fill*         0x1004165e        0x2 
+                0x10041cc4       0x40 obj/SDK_EVAL_Com.o
+                0x10041cc4                Read_Buffer_Pop
+ .text._sbrk    0x10041d04       0x44 obj/SDK_EVAL_Com.o
+                0x10041d04                _sbrk
+ .text._close   0x10041d48        0x6 obj/SDK_EVAL_Com.o
+                0x10041d48                _close
+ .text._fstat   0x10041d4e        0xa obj/SDK_EVAL_Com.o
+                0x10041d4e                _fstat
+ .text._isatty  0x10041d58        0x4 obj/SDK_EVAL_Com.o
+                0x10041d58                _isatty
+ .text._lseek   0x10041d5c        0x4 obj/SDK_EVAL_Com.o
+                0x10041d5c                _lseek
+ .text._write   0x10041d60       0x1a obj/SDK_EVAL_Com.o
+                0x10041d60                _write
+ .text._read    0x10041d7a       0x24 obj/SDK_EVAL_Com.o
+                0x10041d7a                _read
+ *fill*         0x10041d9e        0x2 
  .text.SdkEvalIdentification
-                0x10041660        0xc obj/SDK_EVAL_Config.o
-                0x10041660                SdkEvalIdentification
+                0x10041da0        0xc obj/SDK_EVAL_Config.o
+                0x10041da0                SdkEvalIdentification
  .text.Get_LedGpioPin
-                0x1004166c        0x6 obj/SDK_EVAL_Led.o
-                0x1004166c                Get_LedGpioPin
+                0x10041dac        0x6 obj/SDK_EVAL_Led.o
+                0x10041dac                Get_LedGpioPin
  .text.SdkEvalLedToggle
-                0x10041672        0xc obj/SDK_EVAL_Led.o
-                0x10041672                SdkEvalLedToggle
+                0x10041db2        0xc obj/SDK_EVAL_Led.o
+                0x10041db2                SdkEvalLedToggle
  .text.SdkEvalSpiInit
-                0x1004167e       0x8e obj/SDK_EVAL_SPI.o
-                0x1004167e                SdkEvalSpiInit
+                0x10041dbe       0x8e obj/SDK_EVAL_SPI.o
+                0x10041dbe                SdkEvalSpiInit
  .text.SdkEvalSpiRead
-                0x1004170c       0x7a obj/SDK_EVAL_SPI.o
-                0x1004170c                SdkEvalSpiRead
+                0x10041e4c       0x7a obj/SDK_EVAL_SPI.o
+                0x10041e4c                SdkEvalSpiRead
  .text.SdkEvalSpiWrite
-                0x10041786       0x40 obj/SDK_EVAL_SPI.o
-                0x10041786                SdkEvalSpiWrite
- *fill*         0x100417c6        0x2 
+                0x10041ec6       0x40 obj/SDK_EVAL_SPI.o
+                0x10041ec6                SdkEvalSpiWrite
+ *fill*         0x10041f06        0x2 
  .text.DmaSpiHandlerCallback
-                0x100417c8       0x48 obj/SDK_EVAL_SPI.o
-                0x100417c8                DmaSpiHandlerCallback
+                0x10041f08       0x48 obj/SDK_EVAL_SPI.o
+                0x10041f08                DmaSpiHandlerCallback
  .text.IrqSpiHandlerCallback
-                0x10041810       0xec obj/SDK_EVAL_SPI.o
-                0x10041810                IrqSpiHandlerCallback
+                0x10041f50       0xec obj/SDK_EVAL_SPI.o
+                0x10041f50                IrqSpiHandlerCallback
  .text.PendSV_Handler
-                0x100418fc        0x2 obj/system_bluenrg1.o
-                0x100418fc                PendSV_Handler
+                0x1004203c        0x2 obj/system_bluenrg1.o
+                0x1004203c                PendSV_Handler
  .text.NVM_Handler
-                0x100418fe        0x2 obj/system_bluenrg1.o
-                0x100418fe                NVM_Handler
+                0x1004203e        0x2 obj/system_bluenrg1.o
+                0x1004203e                NVM_Handler
  .text.UART_Handler
-                0x10041900        0x2 obj/system_bluenrg1.o
-                0x10041900                UART_Handler
+                0x10042040        0x2 obj/system_bluenrg1.o
+                0x10042040                UART_Handler
  .text.Blue_Handler
-                0x10041902        0x2 obj/system_bluenrg1.o
-                0x10041902                Blue_Handler
+                0x10042042        0x2 obj/system_bluenrg1.o
+                0x10042042                Blue_Handler
  .text.MFT1A_Handler
-                0x10041904        0x2 obj/system_bluenrg1.o
-                0x10041904                MFT1A_Handler
+                0x10042044        0x2 obj/system_bluenrg1.o
+                0x10042044                MFT1A_Handler
  .text.MFT1B_Handler
-                0x10041906        0x2 obj/system_bluenrg1.o
-                0x10041906                MFT1B_Handler
+                0x10042046        0x2 obj/system_bluenrg1.o
+                0x10042046                MFT1B_Handler
  .text.MFT2A_Handler
-                0x10041908        0x2 obj/system_bluenrg1.o
-                0x10041908                MFT2A_Handler
+                0x10042048        0x2 obj/system_bluenrg1.o
+                0x10042048                MFT2A_Handler
  .text.MFT2B_Handler
-                0x1004190a        0x2 obj/system_bluenrg1.o
-                0x1004190a                MFT2B_Handler
+                0x1004204a        0x2 obj/system_bluenrg1.o
+                0x1004204a                MFT2B_Handler
  .text.RTC_Handler
-                0x1004190c        0x2 obj/system_bluenrg1.o
-                0x1004190c                RTC_Handler
+                0x1004204c        0x2 obj/system_bluenrg1.o
+                0x1004204c                RTC_Handler
  .text.WDG_Handler
-                0x1004190e        0x2 obj/system_bluenrg1.o
-                0x1004190e                WDG_Handler
+                0x1004204e        0x2 obj/system_bluenrg1.o
+                0x1004204e                WDG_Handler
  .text.ADC_Handler
-                0x10041910        0x2 obj/system_bluenrg1.o
-                0x10041910                ADC_Handler
+                0x10042050        0x2 obj/system_bluenrg1.o
+                0x10042050                ADC_Handler
  .text.I2C2_Handler
-                0x10041912        0x2 obj/system_bluenrg1.o
-                0x10041912                I2C2_Handler
+                0x10042052        0x2 obj/system_bluenrg1.o
+                0x10042052                I2C2_Handler
  .text.I2C1_Handler
-                0x10041914        0x2 obj/system_bluenrg1.o
-                0x10041914                I2C1_Handler
+                0x10042054        0x2 obj/system_bluenrg1.o
+                0x10042054                I2C1_Handler
  .text.PKA_Handler
-                0x10041916        0x2 obj/system_bluenrg1.o
-                0x10041916                PKA_Handler
+                0x10042056        0x2 obj/system_bluenrg1.o
+                0x10042056                PKA_Handler
  .text.Wait_LS_Stabilization
-                0x10041918       0x90 obj/system_bluenrg1.o
-                0x10041918                Wait_LS_Stabilization
+                0x10042058       0x90 obj/system_bluenrg1.o
+                0x10042058                Wait_LS_Stabilization
  .text.Set_RF_FrontEnd
-                0x100419a8       0x58 obj/system_bluenrg1.o
-                0x100419a8                Set_RF_FrontEnd
+                0x100420e8       0x58 obj/system_bluenrg1.o
+                0x100420e8                Set_RF_FrontEnd
  .text.BOR_ConfigSave
-                0x10041a00       0x50 obj/system_bluenrg1.o
-                0x10041a00                BOR_ConfigSave
+                0x10042140       0x50 obj/system_bluenrg1.o
+                0x10042140                BOR_ConfigSave
  .text.SET_BORconfigStatus
-                0x10041a50       0x54 obj/system_bluenrg1.o
-                0x10041a50                SET_BORconfigStatus
+                0x10042190       0x54 obj/system_bluenrg1.o
+                0x10042190                SET_BORconfigStatus
  .text.__low_level_init
-                0x10041aa4       0xd0 obj/system_bluenrg1.o
-                0x10041aa4                __low_level_init
+                0x100421e4       0xd0 obj/system_bluenrg1.o
+                0x100421e4                __low_level_init
  .text.RESET_HANDLER
-                0x10041b74       0x8c obj/system_bluenrg1.o
-                0x10041b74                RESET_HANDLER
+                0x100422b4       0x8c obj/system_bluenrg1.o
+                0x100422b4                RESET_HANDLER
  .text.DeviceConfiguration
-                0x10041c00      0x170 obj/system_bluenrg1.o
-                0x10041c00                DeviceConfiguration
+                0x10042340      0x170 obj/system_bluenrg1.o
+                0x10042340                DeviceConfiguration
  .text.SystemInit
-                0x10041d70      0x138 obj/system_bluenrg1.o
-                0x10041d70                SystemInit
- .text.memset   0x10041ea8       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memset.o)
-                0x10041ea8                memset
- .text.printf   0x10041eb8       0x34 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-printf.o)
-                0x10041eb8                iprintf
-                0x10041eb8                printf
- .text._puts_r  0x10041eec       0xc0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-puts.o)
-                0x10041eec                _puts_r
- .text.puts     0x10041fac       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-puts.o)
-                0x10041fac                puts
+                0x100424b0      0x138 obj/system_bluenrg1.o
+                0x100424b0                SystemInit
+ .text.memset   0x100425e8       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memset.o)
+                0x100425e8                memset
+ .text.printf   0x100425f8       0x34 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-printf.o)
+                0x100425f8                iprintf
+                0x100425f8                printf
+ .text._puts_r  0x1004262c       0xc0 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-puts.o)
+                0x1004262c                _puts_r
+ .text.puts     0x100426ec       0x14 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-puts.o)
+                0x100426ec                puts
  .text.__swbuf_r
-                0x10041fc0       0xac c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-wbuf.o)
-                0x10041fc0                __swbuf_r
+                0x10042700       0xac c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-wbuf.o)
+                0x10042700                __swbuf_r
  .text.__swsetup_r
-                0x1004206c       0xec c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-wsetup.o)
-                0x1004206c                __swsetup_r
+                0x100427ac       0xec c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-wsetup.o)
+                0x100427ac                __swsetup_r
  .text.__sflush_r
-                0x10042158      0x114 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fflush.o)
-                0x10042158                __sflush_r
+                0x10042898      0x114 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fflush.o)
+                0x10042898                __sflush_r
  .text._fflush_r
-                0x1004226c       0x58 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fflush.o)
-                0x1004226c                _fflush_r
+                0x100429ac       0x58 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fflush.o)
+                0x100429ac                _fflush_r
  .text._cleanup_r
-                0x100422c4       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                0x100422c4                _cleanup_r
+                0x10042a04       0x10 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x10042a04                _cleanup_r
  .text.std.isra.0
-                0x100422d4       0x48 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x10042a14       0x48 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x1004231c       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                0x1004231c                __sfmoreglue
- .text.__sinit  0x10042348       0x68 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                0x10042348                __sinit
- .text.__sfp    0x100423b0       0x80 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                0x100423b0                __sfp
+                0x10042a5c       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x10042a5c                __sfmoreglue
+ .text.__sinit  0x10042a88       0x68 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x10042a88                __sinit
+ .text.__sfp    0x10042af0       0x80 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x10042af0                __sfp
  .text._fwalk_reent
-                0x10042430       0x42 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fwalk.o)
-                0x10042430                _fwalk_reent
- *fill*         0x10042472        0x2 
+                0x10042b70       0x42 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fwalk.o)
+                0x10042b70                _fwalk_reent
+ *fill*         0x10042bb2        0x2 
  .text.__swhatbuf_r
-                0x10042474       0x50 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-makebuf.o)
-                0x10042474                __swhatbuf_r
+                0x10042bb4       0x50 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-makebuf.o)
+                0x10042bb4                __swhatbuf_r
  .text.__smakebuf_r
-                0x100424c4       0x88 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-makebuf.o)
-                0x100424c4                __smakebuf_r
- .text._free_r  0x1004254c       0x94 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
-                0x1004254c                _free_r
+                0x10042c04       0x88 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-makebuf.o)
+                0x10042c04                __smakebuf_r
+ .text._free_r  0x10042c8c       0x94 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
+                0x10042c8c                _free_r
  .text._malloc_r
-                0x100425e0       0xbc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-mallocr.o)
-                0x100425e0                _malloc_r
+                0x10042d20       0xbc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-mallocr.o)
+                0x10042d20                _malloc_r
  .text.__sfputc_r
-                0x1004269c       0x2a c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x10042ddc       0x2a c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x100426c6       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x100426c6                __sfputs_r
- *fill*         0x100426ea        0x2 
+                0x10042e06       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x10042e06                __sfputs_r
+ *fill*         0x10042e2a        0x2 
  .text._vfprintf_r
-                0x100426ec      0x238 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x100426ec                _vfprintf_r
-                0x100426ec                _vfiprintf_r
+                0x10042e2c      0x238 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x10042e2c                _vfprintf_r
+                0x10042e2c                _vfiprintf_r
  .text._printf_common
-                0x10042924       0xda c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x10042924                _printf_common
- *fill*         0x100429fe        0x2 
+                0x10043064       0xda c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x10043064                _printf_common
+ *fill*         0x1004313e        0x2 
  .text._printf_i
-                0x10042a00      0x234 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x10042a00                _printf_i
- .text._sbrk_r  0x10042c34       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-sbrkr.o)
-                0x10042c34                _sbrk_r
- .text.__sread  0x10042c58       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
-                0x10042c58                __sread
+                0x10043140      0x234 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x10043140                _printf_i
+ .text._sbrk_r  0x10043374       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-sbrkr.o)
+                0x10043374                _sbrk_r
+ .text.__sread  0x10043398       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
+                0x10043398                __sread
  .text.__swrite
-                0x10042c80       0x38 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
-                0x10042c80                __swrite
- .text.__sseek  0x10042cb8       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
-                0x10042cb8                __sseek
+                0x100433c0       0x38 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
+                0x100433c0                __swrite
+ .text.__sseek  0x100433f8       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
+                0x100433f8                __sseek
  .text.__sclose
-                0x10042ce4        0xc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
-                0x10042ce4                __sclose
+                0x10043424        0xc c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
+                0x10043424                __sclose
  .text._write_r
-                0x10042cf0       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-writer.o)
-                0x10042cf0                _write_r
+                0x10043430       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-writer.o)
+                0x10043430                _write_r
  .text._close_r
-                0x10042d18       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-closer.o)
-                0x10042d18                _close_r
+                0x10043458       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-closer.o)
+                0x10043458                _close_r
  .text._fstat_r
-                0x10042d3c       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fstatr.o)
-                0x10042d3c                _fstat_r
+                0x1004347c       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fstatr.o)
+                0x1004347c                _fstat_r
  .text._isatty_r
-                0x10042d60       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-isattyr.o)
-                0x10042d60                _isatty_r
+                0x100434a0       0x24 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-isattyr.o)
+                0x100434a0                _isatty_r
  .text._lseek_r
-                0x10042d84       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-lseekr.o)
-                0x10042d84                _lseek_r
- .text.memchr   0x10042dac       0x16 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memchr-stub.o)
-                0x10042dac                memchr
+                0x100434c4       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-lseekr.o)
+                0x100434c4                _lseek_r
+ .text.memchr   0x100434ec       0x16 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memchr-stub.o)
+                0x100434ec                memchr
  .text.__malloc_lock
-                0x10042dc2        0x2 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
-                0x10042dc2                __malloc_lock
+                0x10043502        0x2 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
+                0x10043502                __malloc_lock
  .text.__malloc_unlock
-                0x10042dc4        0x2 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
-                0x10042dc4                __malloc_unlock
- *fill*         0x10042dc6        0x2 
- .text._read_r  0x10042dc8       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-readr.o)
-                0x10042dc8                _read_r
+                0x10043504        0x2 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
+                0x10043504                __malloc_unlock
+ *fill*         0x10043506        0x2 
+ .text._read_r  0x10043508       0x28 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-readr.o)
+                0x10043508                _read_r
  *(i.*)
  *(.rodata)
- .rodata        0x10042df0        0x3 obj/LSM6DS3.o
- *fill*         0x10042df3        0x1 
- .rodata        0x10042df4       0x19 obj/system_bluenrg1.o
+ .rodata        0x10043530        0x3 obj/LSM6DS3.o
+ *fill*         0x10043533        0x1 
+ .rodata        0x10043534       0x19 obj/system_bluenrg1.o
+ *fill*         0x1004354d        0x3 
+ .rodata        0x10043550       0x40 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(mulsf3.o)
  *(.rodata*)
- *fill*         0x10042e0d        0x3 
  .rodata.main.str1.4
-                0x10042e10       0x4c obj/SPI_Master_w_Sensor_main.o
+                0x10043590       0x4c obj/SPI_Master_w_Sensor_main.o
                                  0x49 (size before relaxing)
  .rodata._global_impure_ptr
-                0x10042e5c        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-impure.o)
-                0x10042e5c                _global_impure_ptr
+                0x100435dc        0x4 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-impure.o)
+                0x100435dc                _global_impure_ptr
  .rodata.__sf_fake_stderr
-                0x10042e60       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                0x10042e60                __sf_fake_stderr
+                0x100435e0       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x100435e0                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x10042e80       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                0x10042e80                __sf_fake_stdin
+                0x10043600       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x10043600                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x10042ea0       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
-                0x10042ea0                __sf_fake_stdout
+                0x10043620       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+                0x10043620                __sf_fake_stdout
  .rodata._vfprintf_r.str1.1
-                0x10042ec0       0x11 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x10043640       0x11 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x10042ed1       0x22 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x10043651       0x22 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
  *(.constdata)
  *(.glue_7)
- .glue_7        0x10042ef3        0x0 linker stubs
+ .glue_7        0x10043673        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x10042ef3        0x0 linker stubs
-                0x10042ef4                . = ALIGN (0x4)
- *fill*         0x10042ef3        0x1 
-                0x10042ef4                _etext = .
-                0x10042f20                _sidata = LOADADDR (.data)
-                0x10042ef4                _sidata2 = LOADADDR (.ram_preamble)
+ .glue_7t       0x10043673        0x0 linker stubs
+                0x10043674                . = ALIGN (0x4)
+ *fill*         0x10043673        0x1 
+                0x10043674                _etext = .
+                0x100436a0                _sidata = LOADADDR (.data)
+                0x10043674                _sidata2 = LOADADDR (.ram_preamble)
 
-.vfp11_veneer   0x10042ef4        0x0
- .vfp11_veneer  0x10042ef4        0x0 linker stubs
+.vfp11_veneer   0x10043674        0x0
+ .vfp11_veneer  0x10043674        0x0 linker stubs
 
-.v4_bx          0x10042ef4        0x0
- .v4_bx         0x10042ef4        0x0 linker stubs
+.v4_bx          0x10043674        0x0
+ .v4_bx         0x10043674        0x0 linker stubs
 
-.iplt           0x10042ef4        0x0
- .iplt          0x10042ef4        0x0 obj/BlueNRG1_it.o
+.iplt           0x10043674        0x0
+ .iplt          0x10043674        0x0 obj/BlueNRG1_it.o
 
-.rel.dyn        0x10042ef4        0x0
- .rel.iplt      0x10042ef4        0x0 obj/BlueNRG1_it.o
+.rel.dyn        0x10043674        0x0
+ .rel.iplt      0x10043674        0x0 obj/BlueNRG1_it.o
 
 .ram_preamble_noinit
                 0x20000000        0x8
@@ -1751,7 +1809,7 @@ LOAD ./assembly\libcrypto.a
                 0x20000004        0x4 obj/system_bluenrg1.o
                 0x20000004                ota_sw_activation
 
-.ram_preamble   0x20000008       0x2c load address 0x10042ef4
+.ram_preamble   0x20000008       0x2c load address 0x10043674
                 0x20000008                _sdata2 = .
  *(.savedMSP)
  .savedMSP      0x20000008        0x4 obj/system_bluenrg1.o
@@ -1859,7 +1917,7 @@ LOAD ./assembly\libcrypto.a
                 0x20001728                . = ALIGN (0x4)
                 0x20001728                _ebss = .
 
-.data           0x20001728       0xa8 load address 0x10042f20
+.data           0x20001728       0xa8 load address 0x100436a0
                 0x20001728                . = ALIGN (0x4)
                 0x20001728                _sdata = .
  *(.data)
@@ -1878,10 +1936,10 @@ LOAD ./assembly\libcrypto.a
                 0x200017d0                . = ALIGN (0x4)
                 0x200017d0                _edata = .
 
-.igot.plt       0x200017d0        0x0 load address 0x10042fc8
+.igot.plt       0x200017d0        0x0 load address 0x10043748
  .igot.plt      0x200017d0        0x0 obj/BlueNRG1_it.o
 
-.noinit         0x200017d0        0x0 load address 0x10042fc8
+.noinit         0x200017d0        0x0 load address 0x10043748
                 0x200017d0                . = ALIGN (0x4)
  *(.noinit)
                 0x200017d0                . = ALIGN (0x4)
@@ -2012,7 +2070,7 @@ OUTPUT(bin/blink.elf elf32-littlearm)
  .debug_info    0x0000d195     0x21e7 obj/system_bluenrg1.o
  .debug_info    0x0000f37c       0xc0 precompiled/context_switch.o
 
-.debug_abbrev   0x00000000     0x2389
+.debug_abbrev   0x00000000     0x23bd
  .debug_abbrev  0x00000000      0x1d1 obj/BlueNRG1_it.o
  .debug_abbrev  0x000001d1      0x26a obj/SPI_Master_w_Sensor_main.o
  .debug_abbrev  0x0000043b      0x21e obj/BlueNRG1_dma.o
@@ -2020,15 +2078,15 @@ OUTPUT(bin/blink.elf elf32-littlearm)
  .debug_abbrev  0x0000083d      0x29d obj/BlueNRG1_spi.o
  .debug_abbrev  0x00000ada      0x211 obj/BlueNRG1_sysCtrl.o
  .debug_abbrev  0x00000ceb      0x29a obj/BlueNRG1_uart.o
- .debug_abbrev  0x00000f85      0x2dc obj/LSM6DS3.o
- .debug_abbrev  0x00001261      0x1a8 obj/misc.o
- .debug_abbrev  0x00001409      0x2e5 obj/miscutil.o
- .debug_abbrev  0x000016ee      0x33f obj/SDK_EVAL_Com.o
- .debug_abbrev  0x00001a2d      0x120 obj/SDK_EVAL_Config.o
- .debug_abbrev  0x00001b4d      0x19c obj/SDK_EVAL_Led.o
- .debug_abbrev  0x00001ce9      0x28d obj/SDK_EVAL_SPI.o
- .debug_abbrev  0x00001f76      0x3ff obj/system_bluenrg1.o
- .debug_abbrev  0x00002375       0x14 precompiled/context_switch.o
+ .debug_abbrev  0x00000f85      0x310 obj/LSM6DS3.o
+ .debug_abbrev  0x00001295      0x1a8 obj/misc.o
+ .debug_abbrev  0x0000143d      0x2e5 obj/miscutil.o
+ .debug_abbrev  0x00001722      0x33f obj/SDK_EVAL_Com.o
+ .debug_abbrev  0x00001a61      0x120 obj/SDK_EVAL_Config.o
+ .debug_abbrev  0x00001b81      0x19c obj/SDK_EVAL_Led.o
+ .debug_abbrev  0x00001d1d      0x28d obj/SDK_EVAL_SPI.o
+ .debug_abbrev  0x00001faa      0x3ff obj/system_bluenrg1.o
+ .debug_abbrev  0x000023a9       0x14 precompiled/context_switch.o
 
 .debug_aranges  0x00000000      0x7d0
  .debug_aranges
@@ -2081,7 +2139,7 @@ OUTPUT(bin/blink.elf elf32-littlearm)
  .debug_ranges  0x000005a0       0x60 obj/SDK_EVAL_SPI.o
  .debug_ranges  0x00000600      0x120 obj/system_bluenrg1.o
 
-.debug_line     0x00000000     0x3051
+.debug_line     0x00000000     0x3067
  .debug_line    0x00000000      0x224 obj/BlueNRG1_it.o
  .debug_line    0x00000224      0x2ae obj/SPI_Master_w_Sensor_main.o
  .debug_line    0x000004d2      0x251 obj/BlueNRG1_dma.o
@@ -2089,15 +2147,15 @@ OUTPUT(bin/blink.elf elf32-littlearm)
  .debug_line    0x00000a05      0x3c4 obj/BlueNRG1_spi.o
  .debug_line    0x00000dc9      0x1ec obj/BlueNRG1_sysCtrl.o
  .debug_line    0x00000fb5      0x3b2 obj/BlueNRG1_uart.o
- .debug_line    0x00001367      0x6e6 obj/LSM6DS3.o
- .debug_line    0x00001a4d      0x1d8 obj/misc.o
- .debug_line    0x00001c25      0x25b obj/miscutil.o
- .debug_line    0x00001e80      0x4c0 obj/SDK_EVAL_Com.o
- .debug_line    0x00002340      0x152 obj/SDK_EVAL_Config.o
- .debug_line    0x00002492      0x214 obj/SDK_EVAL_Led.o
- .debug_line    0x000026a6      0x3b8 obj/SDK_EVAL_SPI.o
- .debug_line    0x00002a5e      0x554 obj/system_bluenrg1.o
- .debug_line    0x00002fb2       0x9f precompiled/context_switch.o
+ .debug_line    0x00001367      0x6fc obj/LSM6DS3.o
+ .debug_line    0x00001a63      0x1d8 obj/misc.o
+ .debug_line    0x00001c3b      0x25b obj/miscutil.o
+ .debug_line    0x00001e96      0x4c0 obj/SDK_EVAL_Com.o
+ .debug_line    0x00002356      0x152 obj/SDK_EVAL_Config.o
+ .debug_line    0x000024a8      0x214 obj/SDK_EVAL_Led.o
+ .debug_line    0x000026bc      0x3b8 obj/SDK_EVAL_SPI.o
+ .debug_line    0x00002a74      0x554 obj/system_bluenrg1.o
+ .debug_line    0x00002fc8       0x9f precompiled/context_switch.o
 
 .debug_str      0x00000000     0x2f3c
  .debug_str     0x00000000      0x658 obj/BlueNRG1_it.o
@@ -2149,7 +2207,7 @@ OUTPUT(bin/blink.elf elf32-littlearm)
  .comment       0x0000007f       0x80 obj/SDK_EVAL_SPI.o
  .comment       0x0000007f       0x80 obj/system_bluenrg1.o
 
-.debug_frame    0x00000000     0x1840
+.debug_frame    0x00000000     0x1848
  .debug_frame   0x00000000       0xa8 obj/BlueNRG1_it.o
  .debug_frame   0x000000a8       0x30 obj/SPI_Master_w_Sensor_main.o
  .debug_frame   0x000000d8       0xb8 obj/BlueNRG1_dma.o
@@ -2157,52 +2215,52 @@ OUTPUT(bin/blink.elf elf32-littlearm)
  .debug_frame   0x000002bc      0x20c obj/BlueNRG1_spi.o
  .debug_frame   0x000004c8       0x68 obj/BlueNRG1_sysCtrl.o
  .debug_frame   0x00000530      0x204 obj/BlueNRG1_uart.o
- .debug_frame   0x00000734      0x274 obj/LSM6DS3.o
- .debug_frame   0x000009a8       0x50 obj/misc.o
- .debug_frame   0x000009f8       0x74 obj/miscutil.o
- .debug_frame   0x00000a6c      0x260 obj/SDK_EVAL_Com.o
- .debug_frame   0x00000ccc       0x30 obj/SDK_EVAL_Config.o
- .debug_frame   0x00000cfc       0x9c obj/SDK_EVAL_Led.o
- .debug_frame   0x00000d98      0x14c obj/SDK_EVAL_SPI.o
- .debug_frame   0x00000ee4      0x23c obj/system_bluenrg1.o
- .debug_frame   0x00001120       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memset.o)
- .debug_frame   0x00001140       0x50 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-printf.o)
- .debug_frame   0x00001190       0x44 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-puts.o)
- .debug_frame   0x000011d4       0x48 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-reent.o)
- .debug_frame   0x0000121c       0x48 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-wbuf.o)
- .debug_frame   0x00001264       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-wsetup.o)
- .debug_frame   0x00001290       0x68 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fflush.o)
- .debug_frame   0x000012f8      0x140 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
- .debug_frame   0x00001438       0x58 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fwalk.o)
- .debug_frame   0x00001490       0x54 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-makebuf.o)
- .debug_frame   0x000014e4       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x00001510       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x0000153c       0x9c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x000015d8       0x54 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x0000162c       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-sbrkr.o)
- .debug_frame   0x00001658       0x90 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
- .debug_frame   0x000016e8       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-writer.o)
- .debug_frame   0x00001714       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-closer.o)
- .debug_frame   0x00001740       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fstatr.o)
- .debug_frame   0x0000176c       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-isattyr.o)
- .debug_frame   0x00001798       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-lseekr.o)
- .debug_frame   0x000017c4       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memchr-stub.o)
- .debug_frame   0x000017e4       0x30 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
- .debug_frame   0x00001814       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-readr.o)
+ .debug_frame   0x00000734      0x27c obj/LSM6DS3.o
+ .debug_frame   0x000009b0       0x50 obj/misc.o
+ .debug_frame   0x00000a00       0x74 obj/miscutil.o
+ .debug_frame   0x00000a74      0x260 obj/SDK_EVAL_Com.o
+ .debug_frame   0x00000cd4       0x30 obj/SDK_EVAL_Config.o
+ .debug_frame   0x00000d04       0x9c obj/SDK_EVAL_Led.o
+ .debug_frame   0x00000da0      0x14c obj/SDK_EVAL_SPI.o
+ .debug_frame   0x00000eec      0x23c obj/system_bluenrg1.o
+ .debug_frame   0x00001128       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00001148       0x50 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-printf.o)
+ .debug_frame   0x00001198       0x44 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-puts.o)
+ .debug_frame   0x000011dc       0x48 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-reent.o)
+ .debug_frame   0x00001224       0x48 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x0000126c       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x00001298       0x68 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fflush.o)
+ .debug_frame   0x00001300      0x140 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00001440       0x58 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x00001498       0x54 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x000014ec       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x00001518       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x00001544       0x9c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x000015e0       0x54 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x00001634       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-sbrkr.o)
+ .debug_frame   0x00001660       0x90 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
+ .debug_frame   0x000016f0       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-writer.o)
+ .debug_frame   0x0000171c       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-closer.o)
+ .debug_frame   0x00001748       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fstatr.o)
+ .debug_frame   0x00001774       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-isattyr.o)
+ .debug_frame   0x000017a0       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-lseekr.o)
+ .debug_frame   0x000017cc       0x20 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x000017ec       0x30 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
+ .debug_frame   0x0000181c       0x2c c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-readr.o)
 
-.debug_loc      0x00000000     0x2ac9
+.debug_loc      0x00000000     0x2d47
  .debug_loc     0x00000000      0x169 obj/BlueNRG1_dma.o
  .debug_loc     0x00000169      0x1d7 obj/BlueNRG1_gpio.o
  .debug_loc     0x00000340      0x323 obj/BlueNRG1_spi.o
  .debug_loc     0x00000663      0x1b3 obj/BlueNRG1_sysCtrl.o
  .debug_loc     0x00000816      0x40a obj/BlueNRG1_uart.o
- .debug_loc     0x00000c20      0xc52 obj/LSM6DS3.o
- .debug_loc     0x00001872       0x8e obj/misc.o
- .debug_loc     0x00001900      0x11a obj/miscutil.o
- .debug_loc     0x00001a1a      0x5fb obj/SDK_EVAL_Com.o
- .debug_loc     0x00002015       0xc6 obj/SDK_EVAL_Led.o
- .debug_loc     0x000020db      0x3c0 obj/SDK_EVAL_SPI.o
- .debug_loc     0x0000249b      0x62e obj/system_bluenrg1.o
+ .debug_loc     0x00000c20      0xed0 obj/LSM6DS3.o
+ .debug_loc     0x00001af0       0x8e obj/misc.o
+ .debug_loc     0x00001b7e      0x11a obj/miscutil.o
+ .debug_loc     0x00001c98      0x5fb obj/SDK_EVAL_Com.o
+ .debug_loc     0x00002293       0xc6 obj/SDK_EVAL_Led.o
+ .debug_loc     0x00002359      0x3c0 obj/SDK_EVAL_SPI.o
+ .debug_loc     0x00002719      0x62e obj/system_bluenrg1.o
 
 Cross Reference Table
 
@@ -2612,6 +2670,9 @@ WDG_ITConfig                                      obj/BlueNRG1_wdg.o
 WDG_SetReload                                     obj/BlueNRG1_wdg.o
 WDG_SetWriteAccess                                obj/BlueNRG1_wdg.o
 Wait_LS_Stabilization                             obj/system_bluenrg1.o
+__aeabi_cfcmpeq                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+__aeabi_cfcmple                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+__aeabi_cfrcmple                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
 __aeabi_d2f                                       c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(truncdfsf2.o)
                                                   obj/BlueNRG1_adc.o
 __aeabi_dadd                                      c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(adddf3.o)
@@ -2624,15 +2685,25 @@ __aeabi_dsub                                      c:/program files (x86)/gnu too
                                                   obj/BlueNRG1_adc.o
 __aeabi_f2d                                       c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(extendsfdf2.o)
                                                   obj/BlueNRG1_adc.o
+__aeabi_f2iz                                      c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(fixsfsi.o)
+                                                  obj/LSM6DS3.o
 __aeabi_fadd                                      c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(addsf3.o)
                                                   obj/BlueNRG1_adc.o
+__aeabi_fcmpeq                                    c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+__aeabi_fcmpge                                    c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+__aeabi_fcmpgt                                    c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+__aeabi_fcmple                                    c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+                                                  obj/LSM6DS3.o
+__aeabi_fcmplt                                    c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
 __aeabi_fdiv                                      c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divsf3.o)
                                                   obj/BlueNRG1_adc.o
 __aeabi_fmul                                      c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(mulsf3.o)
+                                                  obj/LSM6DS3.o
                                                   obj/BlueNRG1_adc.o
 __aeabi_fsub                                      c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(subsf3.o)
                                                   obj/BlueNRG1_adc.o
 __aeabi_i2f                                       c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatsisf.o)
+                                                  obj/LSM6DS3.o
                                                   obj/BlueNRG1_adc.o
 __aeabi_idiv                                      c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_divsi3.o)
                                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fvwrite.o)
@@ -2647,6 +2718,7 @@ __aeabi_memcpy                                    obj/SDK_EVAL_Com.o
 __aeabi_memcpy4                                   obj/SDK_EVAL_Com.o
 __aeabi_memset                                    obj/SDK_EVAL_Com.o
 __aeabi_ui2f                                      c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(floatunsisf.o)
+                                                  obj/LSM6DS3.o
                                                   obj/BlueNRG1_adc.o
 __aeabi_uidiv                                     c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
                                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divdf3.o)
@@ -2674,10 +2746,18 @@ __clzsi2                                          c:/program files (x86)/gnu too
                                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divsf3.o)
                                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(addsf3.o)
 __divsi3                                          c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_divsi3.o)
+__eqsf2                                           c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(eqsf2.o)
+                                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
 __fp_lock_all                                     c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
 __fp_unlock_all                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
+__gesf2                                           c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(gesf2.o)
+                                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
+__gtsf2                                           c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(gesf2.o)
 __io_getcharNonBlocking                           obj/SDK_EVAL_Com.o
+__lesf2                                           c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(lesf2.o)
+                                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_arm_cmpsf2.o)
 __low_level_init                                  obj/system_bluenrg1.o
+__ltsf2                                           c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(lesf2.o)
 __malloc_free_list                                c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-mallocr.o)
                                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
 __malloc_lock                                     c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
@@ -2687,6 +2767,7 @@ __malloc_sbrk_start                               c:/program files (x86)/gnu too
 __malloc_unlock                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-mlock.o)
                                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-mallocr.o)
                                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-freer.o)
+__nesf2                                           c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(eqsf2.o)
 __sclose                                          c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)
                                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-findfp.o)
 __seofread                                        c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-stdio.o)

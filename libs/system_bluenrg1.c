@@ -852,8 +852,7 @@ void DeviceConfiguration(BOOL coldStart, BOOL waitLS_Ready)
 #else
 #warning "No definition for SMPS Configuration"
 #endif
- // cold_start_config[20] = LOW_FREQ_RO;
-  //TODO: Fix this
+
     /* Low Speed Crystal Source */
 #if (LS_SOURCE == LS_SOURCE_EXTERNAL_32KHZ)
     cold_start_config[20] = LOW_FREQ_XO;

@@ -61,15 +61,15 @@ static IMU_6AXES_StatusTypeDef    LSM6DS3_X_GetAxesRaw(int16_t *pData);
 static IMU_6AXES_StatusTypeDef    LSM6DS3_G_GetAxes( int32_t *pData );
 static IMU_6AXES_StatusTypeDef    LSM6DS3_G_GetAxesRaw(int16_t *pData);
 static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Get_ODR( float *odr );
-static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Set_ODR( uint16_t odr );
+static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Set_ODR( float odr );
 static IMU_6AXES_StatusTypeDef    LSM6DS3_X_GetSensitivity( float *pfData );
 static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Get_FS( float *fullScale );
-static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Set_FS( uint8_t fullScale );
+static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Set_FS( float fullScale );
 static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Get_ODR( float *odr );
-static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Set_ODR( uint8_t odr );
+static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Set_ODR( float odr );
 static IMU_6AXES_StatusTypeDef    LSM6DS3_G_GetSensitivity( float *pfData );
 static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Get_FS( float *fullScale );
-static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Set_FS( uint8_t fullScale );
+static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Set_FS( float fullScale );
 static IMU_6AXES_StatusTypeDef    LSM6DS3_Enable_Free_Fall_Detection( void );
 static IMU_6AXES_StatusTypeDef    LSM6DS3_Disable_Free_Fall_Detection( void );
 static IMU_6AXES_StatusTypeDef    LSM6DS3_Get_Status_Free_Fall_Detection( uint8_t *status );
@@ -160,9 +160,8 @@ static IMU_6AXES_StatusTypeDef    LSM6DS3_Init( IMU_6AXES_InitTypeDef *LSM6DS3_I
   }
   
   
-  /******* Gyroscope init *******/               
-
-
+  /******* Gyroscope init *******/
+  
   if(LSM6DS3_G_Set_ODR( LSM6DS3_Init->G_OutputDataRate ) != IMU_6AXES_OK)
   {
     return IMU_6AXES_ERROR;
@@ -346,10 +345,10 @@ static IMU_6AXES_StatusTypeDef    LSM6DS3_X_GetAxes( int32_t *pData )
   {
     return IMU_6AXES_ERROR;
   }
-  //TODO: figure out why multiplying by float causes hardfault
-  pData[0] = (int32_t)(pDataRaw[0] /* * sensitivity*/);
-  pData[1] = (int32_t)(pDataRaw[1] /* * sensitivity*/);
-  pData[2] = (int32_t)(pDataRaw[2] /* * sensitivity*/);
+  
+  pData[0] = (int32_t)(pDataRaw[0] * sensitivity);
+  pData[1] = (int32_t)(pDataRaw[1] * sensitivity);
+  pData[2] = (int32_t)(pDataRaw[2] * sensitivity);
   
   return IMU_6AXES_OK;
 }
@@ -498,10 +497,10 @@ static IMU_6AXES_StatusTypeDef    LSM6DS3_G_GetAxes( int32_t *pData )
   {
     return IMU_6AXES_ERROR;
   }
-  //TODO: Figure out why multiplying by float causes hardfault
-  pData[0] = (int32_t)(pDataRaw[0] /* * sensitivity*/);
-  pData[1] = (int32_t)(pDataRaw[1] /* * sensitivity*/);
-  pData[2] = (int32_t)(pDataRaw[2] /* * sensitivity*/);
+  
+  pData[0] = (int32_t)(pDataRaw[0] * sensitivity);
+  pData[1] = (int32_t)(pDataRaw[1] * sensitivity);
+  pData[2] = (int32_t)(pDataRaw[2] * sensitivity);
   
   return IMU_6AXES_OK;
 }
@@ -570,21 +569,21 @@ static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Get_ODR( float *odr )
 * @param  odr the accelerometer output data rate to be set
 * @retval IMU_6AXES_OK in case of success, an error code otherwise
 */
-static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Set_ODR( uint16_t odr )
+static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Set_ODR( float odr )
 {
   uint8_t new_odr = 0x00;
   uint8_t tempReg = 0x00;
   
-  new_odr = ( odr <= 0    ) ? LSM6DS3_XL_ODR_PD          /* Power Down */
-    : ( odr <= 13   ) ? LSM6DS3_XL_ODR_13HZ
-      : ( odr <= 26   ) ? LSM6DS3_XL_ODR_26HZ
-        : ( odr <= 52   ) ? LSM6DS3_XL_ODR_52HZ
-          : ( odr <= 104  ) ? LSM6DS3_XL_ODR_104HZ
-            : ( odr <= 208  ) ? LSM6DS3_XL_ODR_208HZ
-              : ( odr <= 416  ) ? LSM6DS3_XL_ODR_416HZ
-                : ( odr <= 833  ) ? LSM6DS3_XL_ODR_833HZ
-                  : ( odr <= 1660 ) ? LSM6DS3_XL_ODR_1660HZ
-                    : ( odr <= 3330 ) ? LSM6DS3_XL_ODR_3330HZ
+  new_odr = ( odr <= 0.0f    ) ? LSM6DS3_XL_ODR_PD          /* Power Down */
+    : ( odr <= 13.0f   ) ? LSM6DS3_XL_ODR_13HZ
+      : ( odr <= 26.0f   ) ? LSM6DS3_XL_ODR_26HZ
+        : ( odr <= 52.0f   ) ? LSM6DS3_XL_ODR_52HZ
+          : ( odr <= 104.0f  ) ? LSM6DS3_XL_ODR_104HZ
+            : ( odr <= 208.0f  ) ? LSM6DS3_XL_ODR_208HZ
+              : ( odr <= 416.0f  ) ? LSM6DS3_XL_ODR_416HZ
+                : ( odr <= 833.0f  ) ? LSM6DS3_XL_ODR_833HZ
+                  : ( odr <= 1660.0f ) ? LSM6DS3_XL_ODR_1660HZ
+                    : ( odr <= 3330.0f ) ? LSM6DS3_XL_ODR_3330HZ
                       :                      LSM6DS3_XL_ODR_6660HZ;
                       
                       if(LSM6DS3_IO_Read( &tempReg, LSM6DS3_XG_MEMS_ADDRESS, LSM6DS3_XG_CTRL1_XL, 1 ) != IMU_6AXES_OK)
@@ -690,14 +689,14 @@ static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Get_FS( float *fullScale )
 * @param  fullScale the accelerometer full scale to be set
 * @retval IMU_6AXES_OK in case of success, an error code otherwise
 */
-static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Set_FS( uint8_t fullScale )
+static IMU_6AXES_StatusTypeDef    LSM6DS3_X_Set_FS( float fullScale )
 {
   uint8_t new_fs = 0x00;
   uint8_t tempReg = 0x00;
   
-  new_fs = ( fullScale <= 2 ) ? LSM6DS3_XL_FS_2G
-    : ( fullScale <= 4 ) ? LSM6DS3_XL_FS_4G
-      : ( fullScale <= 8 ) ? LSM6DS3_XL_FS_8G
+  new_fs = ( fullScale <= 2.0f ) ? LSM6DS3_XL_FS_2G
+    : ( fullScale <= 4.0f ) ? LSM6DS3_XL_FS_4G
+      : ( fullScale <= 8.0f ) ? LSM6DS3_XL_FS_8G
         :                         LSM6DS3_XL_FS_16G;
         
         if(LSM6DS3_IO_Read( &tempReg, LSM6DS3_XG_MEMS_ADDRESS, LSM6DS3_XG_CTRL1_XL, 1 ) != IMU_6AXES_OK)
@@ -774,22 +773,19 @@ static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Get_ODR( float *odr )
 * @param  odr the gyroscope output data rate to be set
 * @retval IMU_6AXES_OK in case of success, an error code otherwise
 */
-static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Set_ODR( uint8_t odr )
+static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Set_ODR( float odr )
 {
   uint8_t new_odr = 0x00;
   uint8_t tempReg = 0x00;
-
-  // new_odr = LSM6DS3_G_ODR_13HZ;
-
-//TODO FIX
-  new_odr = ( odr <= 0   ) ? LSM6DS3_G_ODR_PD          /* Power Down */
-    : ( odr <= 13  ) ? LSM6DS3_G_ODR_13HZ
-      : ( odr <= 26  ) ? LSM6DS3_G_ODR_26HZ
-        : ( odr <= 52  ) ? LSM6DS3_G_ODR_52HZ
-          : ( odr <= 104 ) ? LSM6DS3_G_ODR_104HZ
-            : ( odr <= 208 ) ? LSM6DS3_G_ODR_208HZ
-              : ( odr <= 416 ) ? LSM6DS3_G_ODR_416HZ
-                : ( odr <= 833 ) ? LSM6DS3_G_ODR_833HZ
+  
+  new_odr = ( odr <= 0.0f   ) ? LSM6DS3_G_ODR_PD          /* Power Down */
+    : ( odr <= 13.0f  ) ? LSM6DS3_G_ODR_13HZ
+      : ( odr <= 26.0f  ) ? LSM6DS3_G_ODR_26HZ
+        : ( odr <= 52.0f  ) ? LSM6DS3_G_ODR_52HZ
+          : ( odr <= 104.0f ) ? LSM6DS3_G_ODR_104HZ
+            : ( odr <= 208.0f ) ? LSM6DS3_G_ODR_208HZ
+              : ( odr <= 416.0f ) ? LSM6DS3_G_ODR_416HZ
+                : ( odr <= 833.0f ) ? LSM6DS3_G_ODR_833HZ
                   :                     LSM6DS3_G_ODR_1660HZ;
                   
                   if(LSM6DS3_IO_Read( &tempReg, LSM6DS3_XG_MEMS_ADDRESS, LSM6DS3_XG_CTRL2_G, 1 ) != IMU_6AXES_OK)
@@ -921,12 +917,12 @@ static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Get_FS( float *fullScale )
 * @param  fullScale the gyroscope full scale to be set
 * @retval IMU_6AXES_OK in case of success, an error code otherwise
 */
-static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Set_FS( uint8_t fullScale )
+static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Set_FS( float fullScale )
 {
   uint8_t new_fs = 0x00;
   uint8_t tempReg = 0x00;
   
-  if(fullScale <= 125)
+  if(fullScale <= 125.0f)
   {
     new_fs = LSM6DS3_G_FS_125_ENABLE;
     
@@ -959,9 +955,9 @@ static IMU_6AXES_StatusTypeDef    LSM6DS3_G_Set_FS( uint8_t fullScale )
       return IMU_6AXES_ERROR;
     }
     
-    new_fs = ( fullScale <= 245 )  ? LSM6DS3_G_FS_245
-      : ( fullScale <= 500 )  ? LSM6DS3_G_FS_500
-        : ( fullScale <= 1000 ) ? LSM6DS3_G_FS_1000
+    new_fs = ( fullScale <= 245.0f )  ? LSM6DS3_G_FS_245
+      : ( fullScale <= 500.0f )  ? LSM6DS3_G_FS_500
+        : ( fullScale <= 1000.0f ) ? LSM6DS3_G_FS_1000
           :                            LSM6DS3_G_FS_2000;
           
           if(LSM6DS3_IO_Read( &tempReg, LSM6DS3_XG_MEMS_ADDRESS, LSM6DS3_XG_CTRL2_G, 1 ) != IMU_6AXES_OK)
