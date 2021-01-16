@@ -1,5 +1,11 @@
 {
     "version": "2.0.0",
+    "options":{
+        "env":{
+            "ARM_TOOLCHAIN_PATH":"${config:cortex-debug.armToolchainPath}",
+            "ARM_TOOLCHAIN_VERSION":"${config:armToolchainVersion}"
+        },
+    },
     "tasks": [
         {
             "label": "Make",

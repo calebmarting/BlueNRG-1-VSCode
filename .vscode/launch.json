@@ -5,8 +5,10 @@
     "version": "0.2.0",
     "configurations": [
 	{
-	    "name": "Debug (OpenOCD)",
-	    "cwd": "${workspaceRoot}",
+        "name": "Debug (OpenOCD)",
+        //Comment prelaunch task to disable building before upload
+        "preLaunchTask": "Make",
+        "cwd": "${workspaceRoot}",
         "executable": "./bin/blink.elf",
         "request": "launch",
 	    "type": "cortex-debug",
@@ -18,6 +20,19 @@
         ],
         "runToMain": true,
         "svdFile": "${workspaceRoot}/pack/SVD/BlueNRG1.svd"
-	}
+    },
+    {
+        "name": "Debug (JLink)",
+        //Comment prelaunch task to disable building before upload
+        "preLaunchTask": "Make",
+        "cwd": "${workspaceRoot}",
+        "executable": "./bin/blink.elf",
+        "request": "launch",
+        "type": "cortex-debug",
+        "servertype": "jlink",
+        "interface": "swd",
+        "runToMain": true,
+        "device": "BlueNRG1"
+    }
     ]
 }

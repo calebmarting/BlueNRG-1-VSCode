@@ -1,9 +1,9 @@
 /**
   ******************************************************************************
-  * @file    UART/Interrupt/BlueNRG1_conf.h
-  * @author  MEMS Application Team
+  * @file    SPI/Master_w_Sensor/BlueNRG1_conf.h
+  * @author  RF Application Team
   * @version V1.0.0
-  * @date    September-2014
+  * @date    September-2015
   * @brief   Library configuration file.
   ******************************************************************************
   * @attention
@@ -15,7 +15,7 @@
   * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
   * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
   *
-  * <h2><center>&copy; COPYRIGHT 2014 STMicroelectronics</center></h2>
+  * <h2><center>&copy; COPYRIGHT 2015 STMicroelectronics</center></h2>
   ******************************************************************************
   */
 
@@ -26,24 +26,23 @@
 /* Includes ------------------------------------------------------------------*/
 /* Uncomment/Comment the line below to enable/disable peripheral header file inclusion */
 
+#include "BlueNRG1_adc.h"
+#include "BlueNRG1_dma.h"
 #include "BlueNRG1_flash.h"
 #include "BlueNRG1_gpio.h"
-#include "BlueNRG1_dma.h"
-/*#include "BlueNRG1_i2c.h"*/
-/*#include "BlueNRG1_watchdog.h"*/
-/*#include "BlueNRG1_spi.h"*/
-#include "BlueNRG1_uart.h"
-/*#include "BlueNRG1_mft.h"*/
-/*#include "BlueNRG1_rtc.h"*/
-#include "BlueNRG1_dma.h"
+#include "BlueNRG1_i2c.h"
+#include "BlueNRG1_mft.h"
+#include "BlueNRG1_rtc.h"
+#include "BlueNRG1_spi.h"
 #include "BlueNRG1_sysCtrl.h"
-#include "misc.h" /* High level functions for NVIC and SysTick (add-on to CMSIS functions) */
+#include "BlueNRG1_uart.h"
+#include "BlueNRG1_wdg.h"
+#include "misc.h"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
 /* Uncomment the line below to expanse the "assert_param" macro in the 
    Standard Peripheral Library drivers code */
-/* #define USE_FULL_ASSERT    1 */
 
 /* Exported macro ------------------------------------------------------------*/
 #ifdef  USE_FULL_ASSERT
@@ -64,4 +63,4 @@
 
 #endif /* BlueNRG1_CONF_H */
 
-/******************* (C) COPYRIGHT 2014 STMicroelectronics *****END OF FILE****/
+/******************* (C) COPYRIGHT 2015 STMicroelectronics *****END OF FILE****/

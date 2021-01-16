@@ -10,6 +10,7 @@ SRCS = $(wildcard src/*.c) \
 # \
 
 
+
 PRE_OBJS = $(wildcard precompiled/*.o)
 
 LIB_ASSM = $(wildcard assembly/*.a)
@@ -25,14 +26,28 @@ S_OBJS = $(addprefix $(assembly/made/),$(notdir $(S_SRCS:.S=.o)))
 
 C_SWITCH_OBJS = $(addprefix $(OBJ),$(notdir $(CONTEXT_SWITCH:.s=.o)))
 
-$(info $$S_OBJS is [${C_SWITCH_OBJS}])
 
-
+# ! NOTE ARM_TOOLCHAIN_VERSION and ARM_TOOLCHAIN_PATH are set in .vscode/tasks.json envs variable
 #Flag points to the INC folder containing header files
 INC = -Ilibinc/Library/Bluetooth_LE/library/static_stack \
 	-Ilibinc/Library/BLE_Application/Profile_Central/includes \
 	-Ilibinc/Library/Bluetooth_LE/library/static_stack \
-	-I./inc -Ilibinc/Library/hal/inc -Ilibinc/Library/BlueNRG1_Periph_Driver/inc -Ilibinc/Library/Bluetooth_LE/inc -Ilibinc/Library/CMSIS/Include -Ilibinc/Library/CMSIS/Device/ST/BlueNRG1/Include -Ilibinc/Library/SDK_Eval_BlueNRG1/inc -Ilibinc/Library/BLE_Application/OTA/inc -Ilibinc/Library/BLE_Application/Utils/inc -Ilibinc/Library/BLE_Application/layers_inc -IC:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include -IC:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include-fixed -IC:/armtoolslib/arm-none-eabi/include -IC:/armtoolslib/arm-none-eabi/include/machine -IC:/armtoolslib/arm-none-eabi/include/newlib-nano -IC:/armtoolslib/arm-none-eabi/include/sys
+	-I./inc \
+	-Ilibinc/Library/hal/inc \
+	-Ilibinc/Library/BlueNRG1_Periph_Driver/inc \
+	-Ilibinc/Library/Bluetooth_LE/inc \
+	-Ilibinc/Library/CMSIS/Include \
+	-Ilibinc/Library/CMSIS/Device/ST/BlueNRG1/Include \
+	-Ilibinc/Library/SDK_Eval_BlueNRG1/inc \
+	-Ilibinc/Library/BLE_Application/OTA/inc \
+	-Ilibinc/Library/BLE_Application/Utils/inc \
+	-Ilibinc/Library/BLE_Application/layers_inc \
+	-I${ARM_TOOLCHAIN_PATH}/../lib/gcc/arm-none-eabi/${ARM_TOOLCHAIN_VERSION}/include \
+	-I${ARM_TOOLCHAIN_PATH}/../lib/gcc/arm-none-eabi/${ARM_TOOLCHAIN_VERSION}/include-fixed \
+	-I${ARM_TOOLCHAIN_PATH}/../arm-none-eabi/include \
+	-I${ARM_TOOLCHAIN_PATH}/../arm-none-eabi/include/machine \
+	-I${ARM_TOOLCHAIN_PATH}/../arm-none-eabi/include/newlib-nano \
+	-I${ARM_TOOLCHAIN_PATH}/../arm-none-eabi/include/sys
 
 # LD_SCRIPT: linker script
 LD_SCRIPT=./BlueNRG1.ld
@@ -44,13 +59,13 @@ LD = arm-none-eabi-gcc#arm-none-eabi-ld #linker
 AS = arm-none-eabi-as
 OBJCOPY = arm-none-eabi-objcopy #final executable builder
 # FLASHER = lm4flash #flashing utility
-RM      = rm -rf
+RM      = rmdir /s
 # MKDIR   = @mkdir -p $(@D) #creates folders if not present
 
 DEFINES = -DBLUENRG1_DEVICE -DDEBUG -DHS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ -DLS_SOURCE=LS_SOURCE_INTERNAL_RO -DSMPS_INDUCTOR=SMPS_INDUCTOR_4_7uH -DUSER_BUTTON=BUTTON_1 -Dmcpu=cortexm0
 
 #GCC FLAGS
-CFLAGS = -mthumb -mcpu=cortex-m0 $(DEFINES) -specs=nano.specs#-specs=nano.specs 
+CFLAGS = -mthumb -mcpu=cortex-m0 $(DEFINES) -specs=nano.specs -mfloat-abi=soft#-specs=nano.specs 
 CFLAGS +=  -MD -std=c99 -c -fdata-sections -ffunction-sections  -Og -fdata-sections -g -fstack-usage -Wall
 
 ASFLAGS = -Wall -ggdb -mthumb
@@ -60,7 +75,7 @@ SFLAGS =  -mthumb -mcpu=cortex-m0 -g -Wa,--no-warn -x assembler-with-cpp # -spec
 # LDFLAGS = -T$(LD_SCRIPT) -g -mthumb  -nostartfiles -mcpu=cortex-m0 -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -nodefaultlibs -static -L./assembly  -Wl,--start-group -lc -lm -Wl,--end-group -lbluenrg1_stack -lcrypto -specs=nano.specs
 # BETTER LDFLAGS = -T$(LD_SCRIPT) -g  -nostartfiles --gc-sections --defsym=malloc_getpagesize_P=0x80 -static -L./assembly -nodefaultlibs "-Map=BLE_Beacon.map" --cref --start-group -lc -lgcc -lm --end-group -lbluenrg1_stack -lcrypto #-specs=nano.specs
 # LDFLAGS = -T$(LD_SCRIPT) -g  --gc-sections --defsym=malloc_getpagesize_P=0x80  -L./assembly -nodefaultlibs "-Map=BLE_Beacon.map" --cref --start-group -lc -lgcc -lm --end-group -lbluenrg1_stack -lcrypto
-LDFLAGS = -T$(LD_SCRIPT) -mthumb -specs=nano.specs -nostartfiles -mcpu=cortex-m0 -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -nodefaultlibs "-Wl,-Map=BLE_Beacon.map" -static -Wl,--cref  -static -L./assembly  -Wl,--start-group -lc -lm -Wl,--end-group -lbluenrg1_stack -lcrypto
+LDFLAGS = -T$(LD_SCRIPT) -mthumb -mfloat-abi=soft -specs=nano.specs -nostartfiles -mcpu=cortex-m0 -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -nodefaultlibs "-Wl,-Map=BLE_Beacon.map" -static -Wl,--cref  -static -L./assembly  -Wl,--start-group -lc -lm -Wl,--end-group -lbluenrg1_stack -lcrypto
 
 
 

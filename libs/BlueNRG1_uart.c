@@ -155,12 +155,11 @@ void UART_Init(UART_InitType* UART_InitStruct)
   
   /*---------------------------- UART BaudRate Configuration -----------------------*/
   
-  //TODO: This is a hack, I had to define UART_BAUDRATE in this file instead of using the init struct because the division would cause a crash?!. Also, this is actually baud rate 57600 for some reason, wtf
-  // if (UART->CR_b.OVSFACT == 0)
-  //   divider = (UART_CLOCK<<7) / (UART_CLOCK_CYCLE16 * UART_InitStruct->UART_BaudRate);
-  // else
-    //divider = (UART_CLOCK<<7) / (UART_CLOCK_CYCLE8 * UART_InitStruct->UART_BaudRate);
-  divider = (UART_CLOCK<<7) / (UART_CLOCK_CYCLE16 * UART_BAUDRATE);
+  if (UART->CR_b.OVSFACT == 0)
+    divider = (UART_CLOCK<<7) / (UART_CLOCK_CYCLE16 * UART_InitStruct->UART_BaudRate);
+  else
+    divider = (UART_CLOCK<<7) / (UART_CLOCK_CYCLE8 * UART_InitStruct->UART_BaudRate);
+  // divider = (UART_CLOCK<<7) / (UART_CLOCK_CYCLE16 * UART_BAUDRATE);
 
 
   ibrd = divider >> 7;

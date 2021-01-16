@@ -3,62 +3,68 @@ obj/SDK_EVAL_Com.o: libs/SDK_EVAL_Com.c \
  libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/bluenrg_x_device.h \
  libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/BlueNRG1.h \
  libinc/Library/CMSIS/Include/core_cm0.h \
- C:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include/stdint.h \
- C:/armtoolslib/arm-none-eabi/include/stdint.h \
- C:/armtoolslib/arm-none-eabi/include/machine/_default_types.h \
- C:/armtoolslib/arm-none-eabi/include/sys/features.h \
- C:/armtoolslib/arm-none-eabi/include/_newlib_version.h \
- C:/armtoolslib/arm-none-eabi/include/sys/_intsup.h \
- C:/armtoolslib/arm-none-eabi/include/sys/_stdint.h \
+ c:\progra~2\gnutoo~1\82018-~1\lib\gcc\arm-none-eabi\8.2.1\include\stdint.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\stdint.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\machine\_default_types.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\features.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\_newlib_version.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\_intsup.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\_stdint.h \
  libinc/Library/CMSIS/Include/core_cmInstr.h \
  libinc/Library/CMSIS/Include/core_cmFunc.h \
  libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/system_BlueNRG1.h \
  libinc/Library/hal/inc/compiler.h libinc/Library/hal/inc/hal_types.h \
  libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/system_bluenrg.h \
  inc/BlueNRG1_conf.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_adc.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
  libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_flash.h \
  libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_gpio.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_uart.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_i2c.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_mft.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_rtc.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_spi.h \
  libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_sysCtrl.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_uart.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_wdg.h \
  libinc/Library/BlueNRG1_Periph_Driver/inc/misc.h \
  libinc/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Config.h \
  libinc/Library/SDK_Eval_BlueNRG1/inc/USER_Platform_Configuration.h \
  libinc/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Button.h \
  libinc/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Com.h \
  libinc/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Led.h \
- C:/armtoolslib/arm-none-eabi/include/stdio.h \
- C:/armtoolslib/arm-none-eabi/include/_ansi.h \
- C:/armtoolslib/arm-none-eabi/include/newlib.h \
- C:/armtoolslib/arm-none-eabi/include/sys/config.h \
- C:/armtoolslib/arm-none-eabi/include/machine/ieeefp.h \
- C:/armtoolslib/arm-none-eabi/include/sys/cdefs.h \
- C:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include/stddef.h \
- C:/armtoolslib/lib/gcc/arm-none-eabi/8.2.1/include/stdarg.h \
- C:/armtoolslib/arm-none-eabi/include/sys/reent.h \
- C:/armtoolslib/arm-none-eabi/include/_ansi.h \
- C:/armtoolslib/arm-none-eabi/include/sys/_types.h \
- C:/armtoolslib/arm-none-eabi/include/machine/_types.h \
- C:/armtoolslib/arm-none-eabi/include/sys/lock.h \
- C:/armtoolslib/arm-none-eabi/include/sys/types.h \
- C:/armtoolslib/arm-none-eabi/include/sys/_pthreadtypes.h \
- C:/armtoolslib/arm-none-eabi/include/machine/types.h \
- C:/armtoolslib/arm-none-eabi/include/sys/stdio.h \
- C:/armtoolslib/arm-none-eabi/include/sys/stat.h \
- C:/armtoolslib/arm-none-eabi/include/time.h \
- C:/armtoolslib/arm-none-eabi/include/machine/time.h \
- C:/armtoolslib/arm-none-eabi/include/sys/timespec.h \
- C:/armtoolslib/arm-none-eabi/include/sys/_timespec.h \
- C:/armtoolslib/arm-none-eabi/include/stdlib.h \
- C:/armtoolslib/arm-none-eabi/include/machine/stdlib.h \
- C:/armtoolslib/arm-none-eabi/include/errno.h \
- C:/armtoolslib/arm-none-eabi/include/sys/errno.h \
- C:/armtoolslib/arm-none-eabi/include/signal.h \
- C:/armtoolslib/arm-none-eabi/include/sys/signal.h \
- C:/armtoolslib/arm-none-eabi/include/sys/_sigset.h \
- C:/armtoolslib/arm-none-eabi/include/sys/time.h \
- C:/armtoolslib/arm-none-eabi/include/sys/_timeval.h \
- C:/armtoolslib/arm-none-eabi/include/machine/_time.h \
- C:/armtoolslib/arm-none-eabi/include/sys/times.h \
- C:/armtoolslib/arm-none-eabi/include/string.h \
- C:/armtoolslib/arm-none-eabi/include/sys/string.h
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\stdio.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\_ansi.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\newlib.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\config.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\machine\ieeefp.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\cdefs.h \
+ c:\progra~2\gnutoo~1\82018-~1\lib\gcc\arm-none-eabi\8.2.1\include\stddef.h \
+ c:\progra~2\gnutoo~1\82018-~1\lib\gcc\arm-none-eabi\8.2.1\include\stdarg.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\reent.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\_ansi.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\_types.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\machine\_types.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\lock.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\types.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\_pthreadtypes.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\machine\types.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\stdio.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\stat.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\time.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\machine\time.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\timespec.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\_timespec.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\stdlib.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\machine\stdlib.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\errno.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\errno.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\signal.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\signal.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\_sigset.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\time.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\_timeval.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\machine\_time.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\times.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\string.h \
+ c:\progra~2\gnutoo~1\82018-~1\arm-none-eabi\include\sys\string.h

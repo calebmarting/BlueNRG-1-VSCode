@@ -1,0 +1,11 @@
+SDK_EVAL_SPI.c:148:13:SdkEvalSpiInit	40	static
+SDK_EVAL_SPI.c:210:13:SdkEvalSpiRead	24	static
+SDK_EVAL_SPI.c:246:13:SdkEvalSpiWrite	16	static
+SDK_EVAL_SPI.c:276:13:SdkEvalSpiDmaInit	88	static
+SDK_EVAL_SPI.c:364:13:SdkEvalSpiDmaRead	16	static
+SDK_EVAL_SPI.c:404:13:SdkEvalSpiDmaWrite	16	static
+SDK_EVAL_SPI.c:435:6:DmaSpiHandlerCallback	8	static
+SDK_EVAL_SPI.c:464:13:SdkEvalSpiIrqInit	48	static
+SDK_EVAL_SPI.c:529:13:SdkEvalSpiIrqRead	16	static
+SDK_EVAL_SPI.c:562:13:SdkEvalSpiIrqWrite	16	static
+SDK_EVAL_SPI.c:591:6:IrqSpiHandlerCallback	8	static
