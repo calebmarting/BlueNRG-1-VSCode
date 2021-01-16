@@ -5,8 +5,10 @@
     "version": "0.2.0",
     "configurations": [
 	{
-	    "name": "Debug (OpenOCD)",
-	    "cwd": "${workspaceRoot}",
+        "name": "Debug (OpenOCD)",
+        //Comment prelaunch task to disable building before upload
+        "preLaunchTask": "Make",
+        "cwd": "${workspaceRoot}",
         "executable": "./bin/blink.elf",
         "request": "launch",
 	    "type": "cortex-debug",

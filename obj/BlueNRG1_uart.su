@@ -1,6 +1,6 @@
 BlueNRG1_uart.c:92:6:UART_Cmd	0	static
 BlueNRG1_uart.c:114:6:UART_DeInit	8	static
-BlueNRG1_uart.c:141:6:UART_Init	20	static
+BlueNRG1_uart.c:141:6:UART_Init	16	static
 BlueNRG1_uart.c:221:6:UART_StructInit	0	static
 BlueNRG1_uart.c:252:6:UART_ITConfig	0	static
 BlueNRG1_uart.c:273:6:UART_SendData	0	static

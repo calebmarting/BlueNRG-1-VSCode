@@ -50,7 +50,7 @@ RM      = rm -rf
 DEFINES = -DBLUENRG1_DEVICE -DDEBUG -DHS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ -DLS_SOURCE=LS_SOURCE_INTERNAL_RO -DSMPS_INDUCTOR=SMPS_INDUCTOR_4_7uH -DUSER_BUTTON=BUTTON_1 -Dmcpu=cortexm0
 
 #GCC FLAGS
-CFLAGS = -mthumb -mcpu=cortex-m0 $(DEFINES) -specs=nano.specs#-specs=nano.specs 
+CFLAGS = -mthumb -mcpu=cortex-m0 $(DEFINES) -specs=nano.specs -mfloat-abi=soft#-specs=nano.specs 
 CFLAGS +=  -MD -std=c99 -c -fdata-sections -ffunction-sections  -Og -fdata-sections -g -fstack-usage -Wall
 
 ASFLAGS = -Wall -ggdb -mthumb
@@ -60,7 +60,7 @@ SFLAGS =  -mthumb -mcpu=cortex-m0 -g -Wa,--no-warn -x assembler-with-cpp # -spec
 # LDFLAGS = -T$(LD_SCRIPT) -g -mthumb  -nostartfiles -mcpu=cortex-m0 -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -nodefaultlibs -static -L./assembly  -Wl,--start-group -lc -lm -Wl,--end-group -lbluenrg1_stack -lcrypto -specs=nano.specs
 # BETTER LDFLAGS = -T$(LD_SCRIPT) -g  -nostartfiles --gc-sections --defsym=malloc_getpagesize_P=0x80 -static -L./assembly -nodefaultlibs "-Map=BLE_Beacon.map" --cref --start-group -lc -lgcc -lm --end-group -lbluenrg1_stack -lcrypto #-specs=nano.specs
 # LDFLAGS = -T$(LD_SCRIPT) -g  --gc-sections --defsym=malloc_getpagesize_P=0x80  -L./assembly -nodefaultlibs "-Map=BLE_Beacon.map" --cref --start-group -lc -lgcc -lm --end-group -lbluenrg1_stack -lcrypto
-LDFLAGS = -T$(LD_SCRIPT) -mthumb -specs=nano.specs -nostartfiles -mcpu=cortex-m0 -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -nodefaultlibs "-Wl,-Map=BLE_Beacon.map" -static -Wl,--cref  -static -L./assembly  -Wl,--start-group -lc -lm -Wl,--end-group -lbluenrg1_stack -lcrypto
+LDFLAGS = -T$(LD_SCRIPT) -mthumb -mfloat-abi=soft -specs=nano.specs -nostartfiles -mcpu=cortex-m0 -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -nodefaultlibs "-Wl,-Map=BLE_Beacon.map" -static -Wl,--cref  -static -L./assembly  -Wl,--start-group -lc -lm -Wl,--end-group -lbluenrg1_stack -lcrypto
 
 
 

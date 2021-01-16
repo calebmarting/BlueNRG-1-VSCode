@@ -55,7 +55,7 @@
  * with libstdc++-v3.  */
 
 
-void __aeabi_memmove4(void *dest, const void *src, size_t n) {
-    memmove(dest, src, n);
-}
+// void __aeabi_memmove4(void *dest, const void *src, size_t n) {
+//     memmove(dest, src, n);
+// }
 

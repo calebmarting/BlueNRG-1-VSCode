@@ -1,9 +1,9 @@
 /**
   ******************************************************************************
-  * @file    GPIO/IOToggle//BlueNRG1_it.h 
-  * @author  MEMS Application Team
+  * @file    SPI/Master_w_Sensor/BlueNRG1_it.h 
+  * @author  RF Application Team
   * @version V1.0.0
-  * @date    September-2014
+  * @date    September-2015
   * @brief   This file contains the headers of the interrupt handlers.
   ******************************************************************************
   * @attention
@@ -24,20 +24,14 @@
 #define BlueNRG1_IT_H
 
 /* Includes ------------------------------------------------------------------*/
-#include "bluenrg_x_device.h"
 
 /* Exported types ------------------------------------------------------------*/
 /* Exported constants --------------------------------------------------------*/
+/* Exported defines --------------------------------------------------------*/
+/* Exported variables --------------------------------------------------------*/
 /* Exported macro ------------------------------------------------------------*/
 /* Exported functions ------------------------------------------------------- */
 
-void NMI_Handler(void);
-void HardFault_Handler(void);
-void SVC_Handler(void);
-void PendSV_Handler(void);
-void SysTick_Handler(void);
-
-
 #endif /* BlueNRG1_IT_H */
 
-/******************* (C) COPYRIGHT 2014 STMicroelectronics *****END OF FILE****/
+/******************* (C) COPYRIGHT 2015 STMicroelectronics *****END OF FILE****/

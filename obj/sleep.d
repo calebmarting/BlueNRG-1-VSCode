@@ -30,11 +30,17 @@ obj/sleep.o: libs/sleep.c \
  libinc/Library/hal/inc/compiler.h libinc/Library/hal/inc/hal_types.h \
  libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/system_bluenrg.h \
  inc/BlueNRG1_conf.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_adc.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
  libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_flash.h \
  libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_gpio.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_uart.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_i2c.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_mft.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_rtc.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_spi.h \
  libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_sysCtrl.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_uart.h \
+ libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_wdg.h \
  libinc/Library/BlueNRG1_Periph_Driver/inc/misc.h \
  libinc/Library/hal/inc/sleep.h libinc/Library/hal/inc/miscutil.h \
  libinc/Library/hal/inc/crash_handler.h
