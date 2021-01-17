@@ -6,6 +6,13 @@ This is an ongoing project and there are some issues and jank. Things like print
 
 It's still better than paying $1500 a year for licenses to IAR or MDK5 though...
 
+## Features
+
+- OTA
+- Low Power (multiple years on a coin cell)
+
+## BlueNRG-1 Dev Board
+
 ## Setup
 1. [Fork this template](https://github.com/ctjet/BlueNRG-1-VSCode/generate) for your own project and clone to your computer
 2. Download and install VSCode and open your cloned project
@@ -24,3 +31,16 @@ It's still better than paying $1500 a year for licenses to IAR or MDK5 though...
         `"armToolchainVersion": "10.2.1",`
     5. (Optional if using JLink) Copy your JLink Server's install location into the setting "cortex-debug.JLinkGDBServerPath", for example:
         '"cortex-debug.JLinkGDBServerPath": "C:/Program Files (x86)/SEGGER/JLink_V635c/JLinkGDBServerCL.exe"'
+
+You should be done! 
+
+## Building and running the example project
+1. Press ctrl+shift+b to build the project, if everything is set up, it should build!
+2. Navigate to the run menu on the left and set your debug configuration to "Debug (ST-Link)" or "Debug (JLink)" depending on which debug device you are using
+    - You will also need to connect your debug device to your ST-Link or JLink using the SWDIO, SWCLK, and GND pins. **NOTE:** I do not recommend using the 3.3V line to power your BlueNRG module, it causes errors. Please use an external power supply or coin cell between 1.7 to 3.6 V
+3. Click run or press f5, a debug window should pop up. Please note that this also executes the make task, so you do not need to press ctrl+shift+b every time you want to build and upload. To modify this behavior, edit the  .vscode/launch.json file
+4. You should be able to step through your program, or click continue to let it run. When running it should blink the LED (GPIO_Pin_14 on my dev board) and also become a BLE Beacon. You should be able to see the BLE device through a BLE sniffer on your phone
+
+## File locations explanation
+
+## Troubleshooting
