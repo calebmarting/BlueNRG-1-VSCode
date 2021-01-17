@@ -62,7 +62,7 @@ OBJCOPY = arm-none-eabi-objcopy #final executable builder
 RM      = rmdir /s
 # MKDIR   = @mkdir -p $(@D) #creates folders if not present
 
-DEFINES = -DBLUENRG1_DEVICE -DDEBUG -DHS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ -DLS_SOURCE=LS_SOURCE_INTERNAL_RO -DSMPS_INDUCTOR=SMPS_INDUCTOR_4_7uH -DUSER_BUTTON=BUTTON_1 -Dmcpu=cortexm0
+DEFINES = -DBLUENRG1_DEVICE -DDEBUG -DHS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ -DLS_SOURCE=LS_SOURCE_INTERNAL_RO -DSMPS_INDUCTOR=SMPS_INDUCTOR_4_7uH -Dmcpu=cortexm0
 
 #GCC FLAGS
 CFLAGS = -mthumb -mcpu=cortex-m0 $(DEFINES) -specs=nano.specs -mfloat-abi=soft#-specs=nano.specs 
