@@ -232,7 +232,6 @@ NOTEs:
 /* Private define ------------------------------------------------------------*/
 #define BLE_BEACON_VERSION_STRING "1.1.0"
 
-#define USER_BUTTON BUTTON_1
 /* Set to 1 for enabling Flags AD Type position at the beginning 
    of the advertising packet */
 #define ENABLE_FLAGS_AD_TYPE_AT_BEGINNING 1
@@ -404,8 +403,6 @@ int main(void) {
   /* Put the LEDs off */
   GPIO_WriteBit(GPIO_Pin_14, LED_ON);
 
-
-
   /* BlueNRG-1 stack init */
   ret = BlueNRG_Stack_Initialization(&BlueNRG_Stack_Init_params);
   if (ret != BLE_STATUS_SUCCESS) {
@@ -413,14 +410,26 @@ int main(void) {
     while(1);
   }
   
-  uint8_t bdaddr[] = {0x8D, 0x40, 0xD0, 0x63, 0x78, 0x04 };
-  ret=aci_hal_write_config_data(CONFIG_DATA_PUBADDR_OFFSET,CONFIG_DATA_PUBADDR_LEN, bdaddr);
+ //The EMB1061 has a preprogrammed mac address, which is also printed on the QR code
+  //If you are using some other module, you may need to change this address or replace this with a byte array
+  const uint8_t *macAddressLocation = (uint8_t *)0x10066800;
+
+  // For example, mac address 047863AB209D would be
+  // uint8_t macAddressLocation[] = {0x9D, 0x20, 0xAB, 0x63, 0x78, 0x04};
+
+  // Set the mac address in the BLE stack to the value stored by the manufacturer.
+  ret=aci_hal_write_config_data(CONFIG_DATA_PUBADDR_OFFSET,CONFIG_DATA_PUBADDR_LEN, macAddressLocation);
   if(ret) {printf("Setting address failed.\n");}
   
   /* Init the BlueNRG-1 device */
   Device_Init();
 
-  SdkEvalPushButtonInit(USER_BUTTON); 
+    /* Configures Button pin as input */
+  GPIO_InitStructure.GPIO_Pin = GPIO_Pin_13;
+  GPIO_InitStructure.GPIO_Mode = GPIO_Input;
+  GPIO_InitStructure.GPIO_Pull = DISABLE;
+  GPIO_InitStructure.GPIO_HighPwr = DISABLE;
+  GPIO_Init(&GPIO_InitStructure);
 
 
   /* Start Beacon Non Connectable Mode*/
@@ -432,7 +441,7 @@ int main(void) {
   while(1) 
   {
     //printf("%lu\n",(uint32_t)Clock_Time());
-    if (SdkEvalPushButtonGetState(USER_BUTTON) == RESET)
+    if (GPIO_ReadBit(GPIO_Pin_13))
     {
       if(delay != 100){
         printf("Pressed!\n");
