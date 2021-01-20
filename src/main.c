@@ -231,6 +231,8 @@ NOTEs:
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 #define BLE_BEACON_VERSION_STRING "1.1.0"
+#define LOCAL_NAME  'B','l','u','e','N','R','G','1'
+
 
 /* Set to 1 for enabling Flags AD Type position at the beginning 
    of the advertising packet */
@@ -269,6 +271,18 @@ void Device_Init(void)
     printf ("Error in aci_gap_init() 0x%04x\r\n", ret);
   else
     printf ("aci_gap_init() --> SUCCESS\r\n");
+
+  uint8_t name[] = {LOCAL_NAME };
+
+    /* Set the device name */
+  ret = aci_gatt_update_char_value_ext(0,service_handle, dev_name_char_handle,0,sizeof(name),0, sizeof(name), name);
+  if (ret != BLE_STATUS_SUCCESS) {
+    printf ("Error in Gatt Update characteristic value 0x%02x\r\n", ret);
+    return ret;
+  } else {
+    printf ("aci_gatt_update_char_value_ext() --> SUCCESS\r\n");
+  }
+
 }
 
 
@@ -281,6 +295,8 @@ static void Start_Beaconing(void)
 {  
   uint8_t ret = BLE_STATUS_SUCCESS;
 
+uint8_t local_name[] = { AD_TYPE_COMPLETE_LOCAL_NAME, LOCAL_NAME };
+
 #if ENABLE_FLAGS_AD_TYPE_AT_BEGINNING
   /* Set AD Type Flags at beginning on Advertising packet  */
   uint8_t adv_data[] = {
@@ -288,6 +304,9 @@ static void Start_Beaconing(void)
       0x02, 
       0x01, 
       0x06, 
+      sizeof(local_name),                      /* Length of AD type Complete Local Name */
+      0x09,                   /* AD type Complete Local Name */ 
+      LOCAL_NAME,             /* Local Name */            
       /* Advertising data: manufacturer specific data */
       26, //len
       AD_TYPE_MANUFACTURER_SPECIFIC_DATA,  //manufacturer type
@@ -325,9 +344,10 @@ static void Start_Beaconing(void)
   else
     printf ("hci_le_set_scan_resp_data() --> SUCCESS\r\n");
 
+
   /* put device in non connectable mode */
   ret = aci_gap_set_discoverable(ADV_NONCONN_IND, 160, 160, PUBLIC_ADDR, NO_WHITE_LIST_USE,
-                                 0, NULL, 0, NULL, 0, 0); 
+                                sizeof(local_name), local_name, 0, NULL, 0, 0); 
   if (ret != BLE_STATUS_SUCCESS)
   {
     printf ("Error in aci_gap_set_discoverable() 0x%04x\r\n", ret);
@@ -399,7 +419,6 @@ int main(void) {
   GPIO_InitStructure.GPIO_HighPwr = ENABLE;
   GPIO_Init(&GPIO_InitStructure);
 
-
   /* Put the LEDs off */
   GPIO_WriteBit(GPIO_Pin_14, LED_ON);
 
@@ -412,7 +431,7 @@ int main(void) {
   
  //The EMB1061 has a preprogrammed mac address, which is also printed on the QR code
   //If you are using some other module, you may need to change this address or replace this with a byte array
-  const uint8_t *macAddressLocation = (uint8_t *)0x10066800;
+  uint8_t *macAddressLocation = (uint8_t *)0x10066800;
 
   // For example, mac address 047863AB209D would be
   // uint8_t macAddressLocation[] = {0x9D, 0x20, 0xAB, 0x63, 0x78, 0x04};
