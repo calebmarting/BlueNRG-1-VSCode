@@ -13,6 +13,8 @@ It's still better than paying $1500 a year for licenses to IAR or MDK5 though...
 
 ## BlueNRG-1 Dev Board
 
+[[Watch this video](https://img.youtube.com/vi/VH6JlEohDSQ/0.jpg)](https://youtu.be/VH6JlEohDSQ)
+
 ## Setup
 1. [Fork this template](https://github.com/ctjet/BlueNRG-1-VSCode/generate) for your own project and clone to your computer
 2. Download and install VSCode and open your cloned project
