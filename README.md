@@ -1,6 +1,10 @@
 # BlueNRG-1-VSCode
 This repo is a template for setting up VSCode to compile and debug code for the EMB-1061 BlueNRG-1 module
 
+Watch this video for an introduction to this project
+
+[![Watch this video](https://img.youtube.com/vi/VH6JlEohDSQ/0.jpg)](https://youtu.be/VH6JlEohDSQ)
+
 ## Please note:
 This is an ongoing project and there are some issues and jank. Things like printing floats may not work correctly. Please take this into account when you decide to use this chip.
 
@@ -12,8 +16,6 @@ It's still better than paying $1500 a year for licenses to IAR or MDK5 though...
 - Low Power (multiple years on a coin cell)
 
 ## BlueNRG-1 Dev Board
-
-[![Watch this video](https://img.youtube.com/vi/VH6JlEohDSQ/0.jpg)](https://youtu.be/VH6JlEohDSQ)
 
 ## Setup
 1. [Fork this template](https://github.com/ctjet/BlueNRG-1-VSCode/generate) for your own project and clone to your computer
