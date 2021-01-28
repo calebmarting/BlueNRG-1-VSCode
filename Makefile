@@ -3,13 +3,6 @@ PROJECT = blink
 SRCS = $(wildcard src/*.c) \
 		$(wildcard libs/*.c) 
 		
-# CONTEXT_SWITCH = libs/context_switch.s
-
-# S_SRCS =  $(wildcard aeabi-cortexm0/*.S)
-# S_SRCS = aeabi-cortexm0/uread4.S aeabi-cortexm0/memmove4.S 
-# \
-
-
 
 PRE_OBJS = $(wildcard precompiled/*.o)
 
@@ -52,7 +45,6 @@ INC = -I${BLUENRG_DK_LIB_PATH}/Bluetooth_LE/library/static_stack \
 # LD_SCRIPT: linker script
 LD_SCRIPT=./BlueNRG1.ld
 
-
 #UTILITY VARIABLES
 CC = arm-none-eabi-gcc #compiler
 LD = arm-none-eabi-gcc#arm-none-eabi-ld #linker
@@ -60,7 +52,7 @@ AS = arm-none-eabi-as
 OBJCOPY = arm-none-eabi-objcopy #final executable builder
 # FLASHER = lm4flash #flashing utility
 RM      = rmdir /s
-# MKDIR   = @mkdir -p $(@D) #creates folders if not present
+MKDIR   = if not exist $(@D) mkdir $(@D)#creates folders if not present
 
 DEFINES = -DBLUENRG1_DEVICE -DDEBUG -DHS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ -DLS_SOURCE=LS_SOURCE_INTERNAL_RO -DSMPS_INDUCTOR=SMPS_INDUCTOR_4_7uH -Dmcpu=cortexm0
 
@@ -82,29 +74,31 @@ LDFLAGS = -T$(LD_SCRIPT) -mthumb -mfloat-abi=soft -specs=nano.specs -nostartfile
 
 # Rules to build bin
 # all: bin/$(PROJECT).bin
-all: bin/$(PROJECT).elf
+all: bin/$(PROJECT).bin
 
 $(OBJ)%.o: libs/%.s
+	$(MKDIR)
 	$(CC) $(SFLAGS) -o $@ $^ 
 # assembly
 $(assembly/made/)%.o: aeabi-cortexm0/%.S
+	$(MKDIR)
 	$(AS) $(ASFLAGS) -c $< -o $@
 
 $(OBJ)%.o: src/%.c
+	$(MKDIR)
 	$(CC) -o $@ $^ $(INC) $(CFLAGS)
 
 $(OBJ)%.o: libs/%.c
+	$(MKDIR)
 	$(CC) -o $@ $^ $(INC) $(CFLAGS)
 
 bin/$(PROJECT).elf: $(OBJS) $(S_OBJS) $(PRE_OBJS) $(C_SWITCH_OBJS)
+	$(MKDIR)
 	$(LD) -o $@ $^ $(LDFLAGS)
 	
 bin/$(PROJECT).bin: bin/$(PROJECT).elf
+	$(MKDIR)
 	$(OBJCOPY) -O binary $< $@
-
-# #Flashes bin to TM4C
-# flash:
-# 	$(FLASHER) -S $(DEV) bin/$(PROJECT).bin
 
 #remove object and bin files
 clean:
