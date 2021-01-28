@@ -19,6 +19,8 @@ It's still better than paying $1500 a year for licenses to IAR or MDK5 though...
 
 ### You can support this project by picking up a Development Board from [here](https://www.tindie.com/products/22570/)
 
+Design files can be found [here](https://oshwlab.com/cmarting99/discutil_copy)
+
 ## Setup
 1. [Fork this template](https://github.com/ctjet/BlueNRG-1-VSCode/generate) for your own project and clone to your computer
 2. Download and install VSCode and open your cloned project
