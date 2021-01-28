@@ -20,7 +20,7 @@ S_OBJS = $(addprefix $(assembly/made/),$(notdir $(S_SRCS:.S=.o)))
 C_SWITCH_OBJS = $(addprefix $(OBJ),$(notdir $(CONTEXT_SWITCH:.s=.o)))
 
 
-# ! NOTE ARM_TOOLCHAIN_VERSION and ARM_TOOLCHAIN_PATH are set in .vscode/tasks.json envs variable
+# ! NOTE ARM_TOOLCHAIN_VERSION, ARM_TOOLCHAIN_PATH, and BLUENRG_DK_LIB_PATH are set in .vscode/tasks.json envs variable
 #Flag points to the INC folder containing header files
 INC = -I${BLUENRG_DK_LIB_PATH}/Bluetooth_LE/library/static_stack \
 	-I${BLUENRG_DK_LIB_PATH}/BLE_Application/Profile_Central/includes \
