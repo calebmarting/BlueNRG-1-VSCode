@@ -3,7 +3,8 @@
     "options":{
         "env":{
             "ARM_TOOLCHAIN_PATH":"${config:cortex-debug.armToolchainPath}",
-            "ARM_TOOLCHAIN_VERSION":"${config:armToolchainVersion}"
+            "ARM_TOOLCHAIN_VERSION":"${config:armToolchainVersion}",
+            "BLUENRG_DK_LIB_PATH":"${config:bluenrgDkLocation}"
         },
     },
     "tasks": [

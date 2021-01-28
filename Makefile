@@ -29,19 +29,19 @@ C_SWITCH_OBJS = $(addprefix $(OBJ),$(notdir $(CONTEXT_SWITCH:.s=.o)))
 
 # ! NOTE ARM_TOOLCHAIN_VERSION and ARM_TOOLCHAIN_PATH are set in .vscode/tasks.json envs variable
 #Flag points to the INC folder containing header files
-INC = -Ilibinc/Library/Bluetooth_LE/library/static_stack \
-	-Ilibinc/Library/BLE_Application/Profile_Central/includes \
-	-Ilibinc/Library/Bluetooth_LE/library/static_stack \
+INC = -I${BLUENRG_DK_LIB_PATH}/Bluetooth_LE/library/static_stack \
+	-I${BLUENRG_DK_LIB_PATH}/BLE_Application/Profile_Central/includes \
+	-I${BLUENRG_DK_LIB_PATH}/Bluetooth_LE/library/static_stack \
 	-I./inc \
-	-Ilibinc/Library/hal/inc \
-	-Ilibinc/Library/BlueNRG1_Periph_Driver/inc \
-	-Ilibinc/Library/Bluetooth_LE/inc \
-	-Ilibinc/Library/CMSIS/Include \
-	-Ilibinc/Library/CMSIS/Device/ST/BlueNRG1/Include \
-	-Ilibinc/Library/SDK_Eval_BlueNRG1/inc \
-	-Ilibinc/Library/BLE_Application/OTA/inc \
-	-Ilibinc/Library/BLE_Application/Utils/inc \
-	-Ilibinc/Library/BLE_Application/layers_inc \
+	-I${BLUENRG_DK_LIB_PATH}/hal/inc \
+	-I${BLUENRG_DK_LIB_PATH}/BlueNRG1_Periph_Driver/inc \
+	-I${BLUENRG_DK_LIB_PATH}/Bluetooth_LE/inc \
+	-I${BLUENRG_DK_LIB_PATH}/CMSIS/Include \
+	-I${BLUENRG_DK_LIB_PATH}/CMSIS/Device/ST/BlueNRG1/Include \
+	-I${BLUENRG_DK_LIB_PATH}/SDK_Eval_BlueNRG1/inc \
+	-I${BLUENRG_DK_LIB_PATH}/BLE_Application/OTA/inc \
+	-I${BLUENRG_DK_LIB_PATH}/BLE_Application/Utils/inc \
+	-I${BLUENRG_DK_LIB_PATH}/BLE_Application/layers_inc \
 	-I${ARM_TOOLCHAIN_PATH}/../lib/gcc/arm-none-eabi/${ARM_TOOLCHAIN_VERSION}/include \
 	-I${ARM_TOOLCHAIN_PATH}/../lib/gcc/arm-none-eabi/${ARM_TOOLCHAIN_VERSION}/include-fixed \
 	-I${ARM_TOOLCHAIN_PATH}/../arm-none-eabi/include \

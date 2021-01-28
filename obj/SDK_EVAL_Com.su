@@ -1,5 +1,5 @@
 SDK_EVAL_Com.c:113:13:SdkEvalUart_Send_Data	8	static
-SDK_EVAL_Com.c:137:6:SdkEvalComUartInit	48	static
+SDK_EVAL_Com.c:137:6:SdkEvalComUartInit	40	static
 SDK_EVAL_Com.c:191:6:SdkEvalComUartIrqConfig	16	static
 SDK_EVAL_Com.c:237:6:SdkEvalComIOConfig	8	static
 SDK_EVAL_Com.c:254:6:SdkEvalComIOSendData	8	static

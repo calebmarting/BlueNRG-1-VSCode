@@ -15,4 +15,4 @@ obj/osal.o: libs/osal.c \
  c:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\lock.h \
  c:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\cdefs.h \
  c:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\string.h \
- libinc/Library/hal/inc/osal.h
+ C:/Users/cmart/ST/BLUENR~1.1/Library/hal/inc/osal.h

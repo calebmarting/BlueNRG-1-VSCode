@@ -23,49 +23,53 @@ obj/main.o: src/main.c \
  c:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\string.h \
  c:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\string.h \
  inc/BlueNRG1_it.h inc/BlueNRG1_conf.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_adc.h \
- libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/bluenrg_x_device.h \
- libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/BlueNRG1.h \
- libinc/Library/CMSIS/Include/core_cm0.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_adc.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/CMSIS/Device/ST/BlueNRG1/Include/bluenrg_x_device.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/CMSIS/Device/ST/BlueNRG1/Include/BlueNRG1.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/CMSIS/Include/core_cm0.h \
  c:\progra~2\gnuarm~1\102020~1\lib\gcc\arm-none-eabi\10.2.1\include\stdint.h \
  c:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\stdint.h \
  c:\progra~2\gnuarm~1\102020~1\arm-none-eabi\include\sys\_intsup.h \
- libinc/Library/CMSIS/Include/core_cmInstr.h \
- libinc/Library/CMSIS/Include/core_cmFunc.h \
- libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/system_BlueNRG1.h \
- libinc/Library/hal/inc/compiler.h libinc/Library/hal/inc/hal_types.h \
- libinc/Library/CMSIS/Device/ST/BlueNRG1/Include/system_bluenrg.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_flash.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_gpio.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_i2c.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_mft.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_rtc.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_spi.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_sysCtrl.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_uart.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_wdg.h \
- libinc/Library/BlueNRG1_Periph_Driver/inc/misc.h \
- libinc/Library/BLE_Application/layers_inc/bluenrg1_hal.h \
- libinc/Library/BLE_Application/layers_inc/ble_const.h \
- libinc/Library/Bluetooth_LE/inc/ble_status.h \
- libinc/Library/BLE_Application/layers_inc/bluenrg1_hal.h \
- libinc/Library/BLE_Application/layers_inc/bluenrg1_gap.h \
- libinc/Library/BLE_Application/layers_inc/link_layer.h \
- libinc/Library/BLE_Application/layers_inc/bluenrg1_gatt_server.h \
- libinc/Library/BLE_Application/layers_inc/link_layer.h \
- libinc/Library/BLE_Application/layers_inc/sm.h \
- libinc/Library/Bluetooth_LE/inc/bluenrg1_stack.h \
- libinc/Library/Bluetooth_LE/inc/bluenrg1_api.h \
- libinc/Library/Bluetooth_LE/inc/ble_status.h \
- libinc/Library/Bluetooth_LE/inc/bluenrg1_events.h \
- libinc/Library/hal/inc/sleep.h \
- libinc/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Config.h \
- libinc/Library/SDK_Eval_BlueNRG1/inc/USER_Platform_Configuration.h \
- libinc/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Button.h \
- libinc/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Config.h \
- libinc/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Com.h \
- libinc/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Led.h inc/Beacon_config.h \
- libinc/Library/Bluetooth_LE/inc/stack_user_cfg.h \
- libinc/Library/BLE_Application/OTA/inc/OTA_btl.h \
- libinc/Library/hal/inc/clock.h
+ C:/Users/cmart/ST/BLUENR~1.1/Library/CMSIS/Include/core_cmInstr.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/CMSIS/Include/core_cmFunc.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/CMSIS/Device/ST/BlueNRG1/Include/system_BlueNRG1.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/hal/inc/compiler.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/hal/inc/hal_types.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/CMSIS/Device/ST/BlueNRG1/Include/system_bluenrg.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_dma.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_flash.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_gpio.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_i2c.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_mft.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_rtc.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_spi.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_sysCtrl.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_uart.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/BlueNRG1_wdg.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BlueNRG1_Periph_Driver/inc/misc.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BLE_Application/layers_inc/bluenrg1_hal.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BLE_Application/layers_inc/ble_const.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/Bluetooth_LE/inc/ble_status.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BLE_Application/layers_inc/bluenrg1_hal.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BLE_Application/layers_inc/bluenrg1_gap.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BLE_Application/layers_inc/link_layer.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BLE_Application/layers_inc/bluenrg1_gatt_server.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BLE_Application/layers_inc/link_layer.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BLE_Application/layers_inc/sm.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/Bluetooth_LE/inc/bluenrg1_stack.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/Bluetooth_LE/inc/bluenrg1_api.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/Bluetooth_LE/inc/ble_status.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/Bluetooth_LE/inc/bluenrg1_events.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/hal/inc/sleep.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Config.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/SDK_Eval_BlueNRG1/inc/USER_Platform_Configuration_auto.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Button.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Config.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Com.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_I2C.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_Led.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/SDK_Eval_BlueNRG1/inc/SDK_EVAL_SPI.h \
+ inc/Beacon_config.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/Bluetooth_LE/inc/stack_user_cfg.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/BLE_Application/OTA/inc/OTA_btl.h \
+ C:/Users/cmart/ST/BLUENR~1.1/Library/hal/inc/clock.h

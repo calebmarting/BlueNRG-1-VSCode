@@ -460,7 +460,7 @@ int main(void) {
   while(1) 
   {
     //printf("%lu\n",(uint32_t)Clock_Time());
-    if (GPIO_ReadBit(GPIO_Pin_13))
+    if (!GPIO_ReadBit(GPIO_Pin_13))
     {
       if(delay != 100){
         printf("Pressed!\n");
