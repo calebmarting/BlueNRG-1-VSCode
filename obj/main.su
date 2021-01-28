@@ -1,5 +1,0 @@
-main.c:294:13:Start_Beaconing	96	static
-main.c:246:6:Device_Init	40	static
-main.c:396:5:main	16	static
-main.c:514:6:hci_hardware_error_event	0	static
-main.c:522:12:App_SleepMode_Check	8	static
