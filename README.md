@@ -51,6 +51,6 @@ You should be done!
 
 ## File locations explanation
 
-Here is the location of where the BlueNRG-1 DK is from https://www.st.com/en/embedded-software/stsw-bluenrg1-dk.html
+Here is the location of where the BlueNRG-1 DK is from https://www.st.com/content/st_com/en/products/embedded-software/evaluation-tool-software/stsw-bluenrg1-dk.html
 
 ## Troubleshooting
