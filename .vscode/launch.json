@@ -9,7 +9,7 @@
         //Comment prelaunch task to disable building before upload
         "preLaunchTask": "Make",
         "cwd": "${workspaceRoot}",
-        "executable": "./bin/blink.elf",
+        "executable": "./bin/${config:binaryFileName}.elf",
         "request": "launch",
 	    "type": "cortex-debug",
         "servertype": "openocd",
@@ -26,7 +26,7 @@
         //Comment prelaunch task to disable building before upload
         "preLaunchTask": "Make",
         "cwd": "${workspaceRoot}",
-        "executable": "./bin/blink.elf",
+        "executable": "./bin/${config:binaryFileName}.elf",
         "request": "launch",
         "type": "cortex-debug",
         "servertype": "jlink",

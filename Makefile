@@ -1,4 +1,4 @@
-PROJECT = blink
+PROJECT = ${BINARY_FILE_NAME}
 # SRCS: all source files from src directory
 SRCS = $(wildcard src/*.c) \
 		$(wildcard libs/*.c) 
