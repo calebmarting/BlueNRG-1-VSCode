@@ -177,7 +177,7 @@ c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/ar
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc.a(lib_a-aeabi_memmove.o)
                               ./assembly\libbluenrg1_stack.a(mem_buff.o) (__aeabi_memmove4)
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
-                              obj/BlueNRG1_i2c.o (__aeabi_uidiv)
+                              obj/BlueNRG1_spi.o (__aeabi_uidiv)
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_divsi3.o)
                               c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-fvwrite.o) (__aeabi_idiv)
 c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_dvmd_tls.o)
@@ -405,74 +405,6 @@ Discarded input sections
                 0x00000000       0x12 obj/BlueNRG1_gpio.o
  .text.GPIO_GetITStatusBit
                 0x00000000       0x12 obj/BlueNRG1_gpio.o
- .text          0x00000000        0x0 obj/BlueNRG1_i2c.o
- .data          0x00000000        0x0 obj/BlueNRG1_i2c.o
- .bss           0x00000000        0x0 obj/BlueNRG1_i2c.o
- .text.I2C_DeInit
-                0x00000000       0x18 obj/BlueNRG1_i2c.o
- .text.I2C_Init
-                0x00000000       0xd4 obj/BlueNRG1_i2c.o
- .text.I2C_StructInit
-                0x00000000       0x14 obj/BlueNRG1_i2c.o
- .text.I2C_Cmd  0x00000000       0x18 obj/BlueNRG1_i2c.o
- .text.I2C_BeginTransaction
-                0x00000000       0x1e obj/BlueNRG1_i2c.o
- .text.I2C_GeneralCallCmd
-                0x00000000       0x18 obj/BlueNRG1_i2c.o
- .text.I2C_ITConfig
-                0x00000000       0x14 obj/BlueNRG1_i2c.o
- .text.I2C_FillTxFIFO
-                0x00000000        0x4 obj/BlueNRG1_i2c.o
- .text.I2C_ReceiveData
-                0x00000000        0x6 obj/BlueNRG1_i2c.o
- .text.I2C_FlushTx
-                0x00000000        0xa obj/BlueNRG1_i2c.o
- .text.I2C_WaitFlushTx
-                0x00000000        0xe obj/BlueNRG1_i2c.o
- .text.I2C_FlushRx
-                0x00000000        0xc obj/BlueNRG1_i2c.o
- .text.I2C_WaitFlushRx
-                0x00000000        0xe obj/BlueNRG1_i2c.o
- .text.I2C_SetTxThreshold
-                0x00000000       0x10 obj/BlueNRG1_i2c.o
- .text.I2C_SetRxThreshold
-                0x00000000       0x10 obj/BlueNRG1_i2c.o
- .text.I2C_GenerateStopCondition
-                0x00000000       0x10 obj/BlueNRG1_i2c.o
- .text.I2C_SetHoldTime
-                0x00000000        0x6 obj/BlueNRG1_i2c.o
- .text.I2C_SetHoldTimeStartCondition
-                0x00000000       0x38 obj/BlueNRG1_i2c.o
- .text.I2C_SetSetupTimeStartCondition
-                0x00000000       0x38 obj/BlueNRG1_i2c.o
- .text.I2C_GetITStatus
-                0x00000000        0xe obj/BlueNRG1_i2c.o
- .text.I2C_GetITPendingBit
-                0x00000000        0xe obj/BlueNRG1_i2c.o
- .text.I2C_ClearITPendingBit
-                0x00000000        0x4 obj/BlueNRG1_i2c.o
- .text.I2C_GetStatus
-                0x00000000        0x8 obj/BlueNRG1_i2c.o
- .text.I2C_DMACmd
-                0x00000000       0x14 obj/BlueNRG1_i2c.o
- .text.I2C_DMATxBurstMode
-                0x00000000       0x20 obj/BlueNRG1_i2c.o
- .text.I2C_DMATxBurstSize
-                0x00000000       0x18 obj/BlueNRG1_i2c.o
- .data.Foncycles
-                0x00000000        0x8 obj/BlueNRG1_i2c.o
- .debug_info    0x00000000     0x141e obj/BlueNRG1_i2c.o
- .debug_abbrev  0x00000000      0x256 obj/BlueNRG1_i2c.o
- .debug_loc     0x00000000      0x32a obj/BlueNRG1_i2c.o
- .debug_aranges
-                0x00000000       0xe8 obj/BlueNRG1_i2c.o
- .debug_ranges  0x00000000       0xd8 obj/BlueNRG1_i2c.o
- .debug_line    0x00000000      0x3e3 obj/BlueNRG1_i2c.o
- .debug_str     0x00000000      0xab9 obj/BlueNRG1_i2c.o
- .comment       0x00000000       0x80 obj/BlueNRG1_i2c.o
- .debug_frame   0x00000000      0x1bc obj/BlueNRG1_i2c.o
- .ARM.attributes
-                0x00000000       0x31 obj/BlueNRG1_i2c.o
  .text          0x00000000        0x0 obj/BlueNRG1_mft.o
  .data          0x00000000        0x0 obj/BlueNRG1_mft.o
  .bss           0x00000000        0x0 obj/BlueNRG1_mft.o
@@ -2732,7 +2664,6 @@ LOAD obj/BlueNRG1_adc.o
 LOAD obj/BlueNRG1_dma.o
 LOAD obj/BlueNRG1_flash.o
 LOAD obj/BlueNRG1_gpio.o
-LOAD obj/BlueNRG1_i2c.o
 LOAD obj/BlueNRG1_mft.o
 LOAD obj/BlueNRG1_pka.o
 LOAD obj/BlueNRG1_radio.o
@@ -6064,32 +5995,6 @@ Hal_Get_Random_Number32                           ./assembly\libbluenrg1_stack.a
 HardFault_Handler                                 obj/BlueNRG1_it.o
 I2C1_Handler                                      obj/system_bluenrg1.o
 I2C2_Handler                                      obj/system_bluenrg1.o
-I2C_BeginTransaction                              obj/BlueNRG1_i2c.o
-I2C_ClearITPendingBit                             obj/BlueNRG1_i2c.o
-I2C_Cmd                                           obj/BlueNRG1_i2c.o
-I2C_DMACmd                                        obj/BlueNRG1_i2c.o
-I2C_DMATxBurstMode                                obj/BlueNRG1_i2c.o
-I2C_DMATxBurstSize                                obj/BlueNRG1_i2c.o
-I2C_DeInit                                        obj/BlueNRG1_i2c.o
-I2C_FillTxFIFO                                    obj/BlueNRG1_i2c.o
-I2C_FlushRx                                       obj/BlueNRG1_i2c.o
-I2C_FlushTx                                       obj/BlueNRG1_i2c.o
-I2C_GeneralCallCmd                                obj/BlueNRG1_i2c.o
-I2C_GenerateStopCondition                         obj/BlueNRG1_i2c.o
-I2C_GetITPendingBit                               obj/BlueNRG1_i2c.o
-I2C_GetITStatus                                   obj/BlueNRG1_i2c.o
-I2C_GetStatus                                     obj/BlueNRG1_i2c.o
-I2C_ITConfig                                      obj/BlueNRG1_i2c.o
-I2C_Init                                          obj/BlueNRG1_i2c.o
-I2C_ReceiveData                                   obj/BlueNRG1_i2c.o
-I2C_SetHoldTime                                   obj/BlueNRG1_i2c.o
-I2C_SetHoldTimeStartCondition                     obj/BlueNRG1_i2c.o
-I2C_SetRxThreshold                                obj/BlueNRG1_i2c.o
-I2C_SetSetupTimeStartCondition                    obj/BlueNRG1_i2c.o
-I2C_SetTxThreshold                                obj/BlueNRG1_i2c.o
-I2C_StructInit                                    obj/BlueNRG1_i2c.o
-I2C_WaitFlushRx                                   obj/BlueNRG1_i2c.o
-I2C_WaitFlushTx                                   obj/BlueNRG1_i2c.o
 IDD_Initialize_Device_IDs                         ./assembly\libbluenrg1_stack.a(device_id_data.o)
                                                   ./assembly\libbluenrg1_stack.a(gap.o)
 Ind_Service_Change_Charac                         ./assembly\libbluenrg1_stack.a(gatt_server.o)
@@ -7078,7 +6983,6 @@ __aeabi_uidiv                                     c:/program files (x86)/gnu too
                                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v6-m\libc_nano.a(lib_a-nano-vfprintf_i.o)
                                                   obj/BlueNRG1_uart.o
                                                   obj/BlueNRG1_spi.o
-                                                  obj/BlueNRG1_i2c.o
 __aeabi_uidivmod                                  c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(_udivsi3.o)
                                                   c:/program files (x86)/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v6-m\libgcc.a(divdf3.o)
                                                   ./assembly\libbluenrg1_stack.a(smp_scv42_caf.o)
