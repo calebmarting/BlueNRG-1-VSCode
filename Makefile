@@ -53,6 +53,8 @@ OBJCOPY = arm-none-eabi-objcopy #final executable builder
 # FLASHER = lm4flash #flashing utility
 RM      = rmdir /s
 MKDIR   = if not exist $(@D) mkdir $(@D)#creates folders if not present
+COPY	= copy "libs\\misc.c" "./libs/misc2.c"
+
 
 DEFINES = -DBLUENRG1_DEVICE -DDEBUG -DHS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ -DLS_SOURCE=LS_SOURCE_INTERNAL_RO -DSMPS_INDUCTOR=SMPS_INDUCTOR_4_7uH -Dmcpu=cortexm0
 
@@ -71,10 +73,20 @@ LDFLAGS = -T$(LD_SCRIPT) -mthumb -mfloat-abi=soft -specs=nano.specs -nostartfile
 # LDFLAGS = -T$(LD_SCRIPT) --specs=nosys.specs -mthumb -mfloat-abi=softfp -mcpu=cortex-m0 -Wl,--gc-sections -Wl,--defsym=malloc_getpagesize_P=0x80 -nodefaultlibs "-Wl,-Map=BLE_Beacon.map" -static -Wl,--cref  -static -L./assembly  -Wl,--start-group -lc -lc -lnosys -lm -Wl,--end-group -lbluenrg1_stack -lcrypto
 
 
-
 # Rules to build bin
 # all: bin/$(PROJECT).bin
-all: bin/$(PROJECT).bin
+all: post-build
+
+pre-build:
+	@echo PRE
+	$(info $$SRCS is [${SRCS}])
+
+post-build: main-build
+	@echo POST
+
+main-build: pre-build
+	$(COPY)
+	$(MAKE) --no-print-directory bin/$(PROJECT).bin
 
 $(OBJ)%.o: libs/%.s
 	$(MKDIR)
