@@ -35,7 +35,7 @@ It's still better than paying $1500 a year for licenses to IAR or MDK5 though...
         '"cortex-debug.JLinkGDBServerPath": "C:/Program Files (x86)/SEGGER/JLink_V635c/JLinkGDBServerCL.exe"'
 6. Install the [BlueNRG-1_2 DK](https://www.st.com/content/st_com/en/products/embedded-software/evaluation-tool-software/stsw-bluenrg1-dk.html)
     1. If building the project doesn't work, you may need to update the settings.json with the file location. Check and make sure that the  "bluenrgDkLocation" setting's value is where your BlueNRG DK installed. If it wasn't, find it and run the getshort.bat with its lib file location.
-        - For example, my install was located in C:\Users\<USER>\ST\BlueNRG-1_2 DK 3.2.1\Library so my setting looks like "bluenrgDkLocation": "C:/Users/<USER>/ST/BLUENR~1.1/Library"
+        - For example, my install was located in `C:\Users\<USER>\ST\BlueNRG-1_2 DK 3.2.1\Library` so my setting looks like `"bluenrgDkLocation": "C:/Users/<USER>/ST/BLUENR~1.1/Library"`
 
 You should be done! 
 
@@ -48,7 +48,7 @@ You should be done!
 
 ## File locations explanation
 
-Here is the location of where the BlueNRG-1 DK is from https://www.st.com/content/st_com/en/products/embedded-software/evaluation-tool-software/stsw-bluenrg1-dk.html When you install this the actual location of the DK files should be C:/Users/<your user>/ST/BlueNRG-1_2 DK 3.2.1
+Here is the location of where the BlueNRG-1 DK is from https://www.st.com/content/st_com/en/products/embedded-software/evaluation-tool-software/stsw-bluenrg1-dk.html When you install this the actual location of the DK files should be `C:/Users/<your user>/ST/BlueNRG-1_2 DK 3.2.1`
 
 ## BlueNRG-1 Dev Board
 
