@@ -84,8 +84,20 @@ LD = arm-none-eabi-gcc#arm-none-eabi-ld #linker
 AS = arm-none-eabi-as
 OBJCOPY = arm-none-eabi-objcopy #final executable builder
 # FLASHER = lm4flash #flashing utility
-RM      = rmdir /s
+ifeq ($(OS),Windows_NT)
 MKDIR   = if not exist $(@D) mkdir $(@D)#creates folders if not present
+CreateDir = if not exist $1 mkdir $1
+FixPath = $1
+RM      = rmdir /s
+COPY = copy
+else
+MKDIR   = if [ -d $(@D) ] ; then echo "dir $(@D) exists" ; else mkdir $(@D) ; fi #creates folders if not present
+CreateDir = if [ -d $1 ] ; then echo "dir $1 exists" ; else mkdir $1 ; fi
+FixPath = $(subst \,/,$1)
+RM      = rm -f
+COPY = cp
+endif
+
 # COPY	= copy "libs\\misc.c" "./libs/misc2.c"
 
 DEFINES = -DBLUENRG1_DEVICE -DDEBUG -DHS_SPEED_XTAL=HS_SPEED_XTAL_16MHZ -DLS_SOURCE=LS_SOURCE_INTERNAL_RO -DSMPS_INDUCTOR=SMPS_INDUCTOR_4_7uH -Dmcpu=cortexm0
@@ -114,8 +126,8 @@ all: post-build
 # Copies necessary files from source dirs 
 pre-build:
 	@echo PRE
-	if not exist "libs" mkdir "libs"
-	$(foreach file,$(subst /,\,$(SRCS_TO_COPY)),@if not exist "libs/$(notdir $(file))" @copy "$(file)" "libs/$(notdir $(file))"${\n})
+	$(call CreateDir, libs)
+	$(foreach file,$(call FixPath,$(SRCS_TO_COPY)),@if [ -f "libs/$(notdir $(file))" ]; then echo file exists ; else $(COPY) "$(file)" "libs/$(notdir $(file))"; fi ${\n} ) 
 	$(info $$SRCS is [${SRCS}])
 
 post-build: main-build

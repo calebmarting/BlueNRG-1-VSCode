@@ -9,11 +9,11 @@
     ],
 
     "armToolchainVersion": "10.2.1",
-    "cortex-debug.armToolchainPath": "C:/PROGRA~2/GNUARM~1/102020~1/bin", 
-    "cortex-debug.openocdPath": "${workspaceRoot}/openocd-0.11.0-rc1/bin/openocd.exe",
+    "cortex-debug.armToolchainPath": "/home/nick/Applications/gcc-arm-none-eabi-10-2020-q4-major/bin", 
+    "cortex-debug.openocdPath": "/home/nick/projects/openocd-0.11.0-rc2/src/openocd",
     //Please modify this to your server location if different
     "cortex-debug.JLinkGDBServerPath": "C:/Program Files (x86)/SEGGER/JLink_V635c/JLinkGDBServerCL.exe",
     //TODO: update this with your user directory's name
-    "bluenrgDkLocation":"C:/Users/cmart/ST/BLUENR~1.1/Library",
+    "bluenrgDkLocation":"/home/nick/Applications/BlueNRG-1_2-DK-3.2.1/Library",
     "binaryFileName":"blinkTest"
 }
