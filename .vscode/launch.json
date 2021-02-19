@@ -15,8 +15,8 @@
         "servertype": "openocd",
         "device":"BlueNRG1",
         "configFiles":[
-            "interface/stlink.cfg",
-            "target/bluenrg-x.cfg"
+            "/usr/local/share/openocd/scripts/interface/stlink.cfg",
+            "/usr/local/share/openocd/scripts/target/bluenrg-x.cfg"
         ],
         "runToMain": true,
         "svdFile": "${workspaceRoot}/pack/SVD/BlueNRG1.svd"
