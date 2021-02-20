@@ -88,12 +88,14 @@ ifeq ($(OS),Windows_NT)
 MKDIR   = if not exist $(@D) mkdir $(@D)#creates folders if not present
 CreateDir = if not exist $1 mkdir $1
 FixPath = $1
+CopySources = $(foreach file,$(subst /,\,$(SRCS_TO_COPY)),@if not exist "libs/$(notdir $(file))" @copy "$(file)" "libs/$(notdir $(file))"${\n})
 RM      = rmdir /s
 COPY = copy
 else
 MKDIR   = if [ -d $(@D) ] ; then echo "dir $(@D) exists" ; else mkdir $(@D) ; fi #creates folders if not present
 CreateDir = if [ -d $1 ] ; then echo "dir $1 exists" ; else mkdir $1 ; fi
 FixPath = $(subst \,/,$1)
+CopySources = $(foreach file,$(call FixPath,$(SRCS_TO_COPY)),@if [ -f "libs/$(notdir $(file))" ]; then echo file exists ; else $(COPY) "$(file)" "libs/$(notdir $(file))"; fi ${\n} ) 
 RM      = rm -f
 COPY = cp
 endif
@@ -127,7 +129,7 @@ all: post-build
 pre-build:
 	@echo PRE
 	$(call CreateDir, libs)
-	$(foreach file,$(call FixPath,$(SRCS_TO_COPY)),@if [ -f "libs/$(notdir $(file))" ]; then echo file exists ; else $(COPY) "$(file)" "libs/$(notdir $(file))"; fi ${\n} ) 
+	$(call CopySources)
 	$(info $$SRCS is [${SRCS}])
 
 post-build: main-build
