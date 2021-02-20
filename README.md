@@ -42,24 +42,28 @@ It's still better than paying $1500 a year for licenses to IAR or MDK5 though...
 You should be done! 
 
 ## Linux Setup
-    - Not yet tested. 
+
 5. In your opened project in VSCode, open and modify `.vscode/settings.json` as follows:
     1. Set path to toolchain in the `"cortex-debug.armToolchainPath"` setting, for example:
-        `'"cortex-debug.armToolchainPath": "/home/<user>/Applications/gcc-arm-none-eabi-10-2020-q4-major/bin",'`
+        `'"cortex-debug.armToolchainPath": "/home/<user>/gcc-arm-none-eabi-10-2020-q4-major/bin",'`
     2. Open your Arm Cortex Debug Tools version's file location in explorer and navigate to `\lib\gcc\arm-none-eabi` and copy the name of the directory at that location. 
-        - My full path was /home/<user>/Applications/gcc-arm-none-eabi-10-2020-q4-major/lib/gcc/arm-none-eabi
+        - My full path was /home/<user>/gcc-arm-none-eabi-10-2020-q4-major/lib/gcc/arm-none-eabi
         - The dir name I copied was 10.2.1
     3. Replace the setting "armToolchainVersion" with the file name you copied, for example:
         `"armToolchainVersion": "10.2.1",`
 
- 6. Install the [BlueNRG-1_2 DK](https://www.st.com/content/st_com/en/products/embedded-software/evaluation-tool-software/stsw-bluenrg1-dk.html) need to register and wait for email to download :(
+ 6. Install the [BlueNRG-1_2 DK](https://www.st.com/content/st_com/en/products/embedded-software/evaluation-tool-software/stsw-bluenrg1-dk.html) 
+ 
+    1. register and wait for email to download :(
+    2. use innoextract to get files from the exe
+    3. copy %USERPROFILE/ST/BlueNRG-1_2 DK 3.2.1 to your desired destination
+    4. update the settings.json with the file location. Check and make sure that the  `"bluenrgDkLocation"` setting's value is where your BlueNRG DK installed., for example:
+    `"/home/<user>/BlueNRG-1_2-DK-3.2.1"`
 
-    1. If building the project doesn't work, you may need to update the settings.json with the file location. Check and make sure that the  `"bluenrgDkLocation"` setting's value is where your BlueNRG DK installed. If it wasn't, find it and run the getshort.bat with its lib file location.
-        - For example, my install was located in `C:\Users\<USER>\ST\BlueNRG-1_2 DK 3.2.1\Library` so my setting looks like `"bluenrgDkLocation": "C:/Users/<USER>/ST/BLUENR~1.1/Library"`
+7. Build and install openocd-0.11.0-rc2
 
-7. compile openocd 11
     1. see openocd readme for instructions http://openocd.org/doc-release/README
-    
+    - no special options needed, defaults work
 
 ## Building and running the example project
 1. Press ctrl+shift+b to build the project, if everything is set up, it should build!
