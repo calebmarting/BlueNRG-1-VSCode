@@ -3,7 +3,6 @@
         {
             "name": "STM32",
             "includePath": [
-                "${workspaceRoot}",
                 "${workspaceRoot}/inc",
                 "${config:bluenrgDkLocation}/hal/inc",
                 "${config:bluenrgDkLocation}/BlueNRG1_Periph_Driver/inc",
@@ -22,7 +21,7 @@
                 "${config:cortex-debug.armToolchainPath}/../arm-none-eabi/include/sys"
             ],
             "defines": [],
-            "intelliSenseMode": "clang-x64",
+            "intelliSenseMode": "windows-gcc-arm",
             "browse": {
                 "path": [
                     "${workspaceRoot}",
@@ -41,7 +40,10 @@
                 ],
                 "limitSymbolsToIncludedHeaders": true,
                 "databaseFilename": "${workspaceRoot}/.vscode/browse.vc.db"
-            }
+            },
+            "compilerPath": "${config:cortex-debug.armToolchainPath}/arm-none-eabi-gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++20"
         }
     ],
     "version": 4
