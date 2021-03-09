@@ -15,29 +15,55 @@ It's still better than paying $1500 a year for licenses to IAR or MDK5 though...
 - OTA
 - Low Power (multiple years on a coin cell)
 
-## Setup
+## Base Setup ( all OS )
 1. [Fork this template](https://github.com/calebmarting/BlueNRG-1-VSCode/generate) for your own project and clone to your computer
 2. Download and install VSCode and open your cloned project
 3. Install the Cortex-Debug extension by marus25
-    1. Search marus25.cortex-debug in the extensions menu and install
+    1. Search `marus25.cortex-debug` in the extensions menu and install
 4. Install the [Arm Cortex Debug Tools](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
-5. In your opened project in VSCode, open and modify .vscode/settings.json as follows:
+
+## Windows Setup
+5. In your opened project in VSCode, open and modify `.vscode/settings.json` as follows:
     1. In the integrated terminal run the getShort.bat with your Arm Cortex Debug Tools version's bin file location as the argument, for example:
         `./getshort.bat "C:\Program Files (x86)\GNU Arm Embedded Toolchain\10 2020-q4-major\bin"`
-    2. Copy the output and put it into the "cortex-debug.armToolchainPath" setting, for example:
-        '"cortex-debug.armToolchainPath": "C:/PROGRA\~2/GNUARM\~1/102020~1/bin",'
-    3. Open your Arm Cortex Debug Tools version's file location in explorer and navigate to \\lib\\gcc\\arm-none-eabi and copy the name of the file at that location. 
+    2. Copy the output and put it into the `"cortex-debug.armToolchainPath"` setting, for example:
+        `'"cortex-debug.armToolchainPath": "C:/PROGRA\~2/GNUARM\~1/102020~1/bin",'`
+    3. Open your Arm Cortex Debug Tools version's file location in explorer and navigate to `\lib\gcc\arm-none-eabi` and copy the name of the file at that location. 
         - My full path was C:\\Program Files (x86)\\GNU Arm Embedded Toolchain\\10 2020-q4-major\\lib\\gcc\\arm-none-eabi
         - The file name I copied was 10.2.1
     4. Replace the setting "armToolchainVersion" with the file name you copied, for example:
         `"armToolchainVersion": "10.2.1",`
-    5. (Optional if using JLink) Copy your JLink Server's install location into the setting "cortex-debug.JLinkGDBServerPath", for example:
-        '"cortex-debug.JLinkGDBServerPath": "C:/Program Files (x86)/SEGGER/JLink_V635c/JLinkGDBServerCL.exe"'
+    5. (Optional if using JLink) Copy your JLink Server's install location into the setting `"cortex-debug.JLinkGDBServerPath"`, for example:
+        `'"cortex-debug.JLinkGDBServerPath": "C:/Program Files (x86)/SEGGER/JLink_V635c/JLinkGDBServerCL.exe"'`
 6. Install the [BlueNRG-1_2 DK](https://www.st.com/content/st_com/en/products/embedded-software/evaluation-tool-software/stsw-bluenrg1-dk.html)
-    1. If building the project doesn't work, you may need to update the settings.json with the file location. Check and make sure that the  "bluenrgDkLocation" setting's value is where your BlueNRG DK installed. If it wasn't, find it and run the getshort.bat with its lib file location.
+    1. If building the project doesn't work, you may need to update the settings.json with the file location. Check and make sure that the  `"bluenrgDkLocation"` setting's value is where your BlueNRG DK installed. If it wasn't, find it and run the getshort.bat with its lib file location.
         - For example, my install was located in `C:\Users\<USER>\ST\BlueNRG-1_2 DK 3.2.1\Library` so my setting looks like `"bluenrgDkLocation": "C:/Users/<USER>/ST/BLUENR~1.1/Library"`
 
 You should be done! 
+
+## Linux Setup
+
+5. In your opened project in VSCode, open and modify `.vscode/settings.json` as follows:
+    1. Set path to toolchain in the `"cortex-debug.armToolchainPath"` setting, for example:
+        `'"cortex-debug.armToolchainPath": "/home/<user>/gcc-arm-none-eabi-10-2020-q4-major/bin",'`
+    2. Open your Arm Cortex Debug Tools version's file location in explorer and navigate to `\lib\gcc\arm-none-eabi` and copy the name of the directory at that location. 
+        - My full path was /home/<user>/gcc-arm-none-eabi-10-2020-q4-major/lib/gcc/arm-none-eabi
+        - The dir name I copied was 10.2.1
+    3. Replace the setting "armToolchainVersion" with the file name you copied, for example:
+        `"armToolchainVersion": "10.2.1",`
+
+ 6. Install the [BlueNRG-1_2 DK](https://www.st.com/content/st_com/en/products/embedded-software/evaluation-tool-software/stsw-bluenrg1-dk.html) 
+ 
+    1. register and wait for email to download :(
+    2. use innoextract to get files from the exe
+    3. copy %USERPROFILE/ST/BlueNRG-1_2 DK 3.2.1 to your desired destination
+    4. update the settings.json with the file location. Check and make sure that the  `"bluenrgDkLocation"` setting's value is where your BlueNRG DK installed., for example:
+    `"/home/<user>/BlueNRG-1_2-DK-3.2.1"`
+
+7. Build and install openocd-0.11.0-rc2
+
+    1. see openocd readme for instructions http://openocd.org/doc-release/README
+    - no special options needed, defaults work
 
 ## Building and running the example project
 1. Press ctrl+shift+b to build the project, if everything is set up, it should build!
