@@ -16,7 +16,7 @@ It's still better than paying $1500 a year for licenses to IAR or MDK5 though...
 - Low Power (multiple years on a coin cell)
 
 ## Setup
-1. [Fork this template](https://github.com/ctjet/BlueNRG-1-VSCode/generate) for your own project and clone to your computer
+1. [Fork this template](https://github.com/calebmarting/BlueNRG-1-VSCode/generate) for your own project and clone to your computer
 2. Download and install VSCode and open your cloned project
 3. Install the Cortex-Debug extension by marus25
     1. Search marus25.cortex-debug in the extensions menu and install
