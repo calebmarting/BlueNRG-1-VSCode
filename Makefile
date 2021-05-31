@@ -31,10 +31,10 @@ SRCS_TO_COPY = \
 	${BLUENRG_DK_LIB_PATH}/${SDK_EVAL_PATH}/SDK_EVAL_Com.c \
 	${BLUENRG_DK_LIB_PATH}/${SDK_EVAL_PATH}/SDK_EVAL_Config.c \
 	${BLUENRG_DK_LIB_PATH}/${SDK_EVAL_PATH}/SDK_EVAL_Led.c \
-	${BLUENRG_DK_LIB_PATH}/${SDK_EVAL_PATH}/SDK_EVAL_SPI.c \
 	${BLUENRG_DK_LIB_PATH}/${SDK_EVAL_PATH}/SDK_EVAL_Config.c \
 	${BLUENRG_DK_LIB_PATH}/CMSIS/Device/ST/BlueNRG1/Source/system_bluenrg1.c \
-	${BLUENRG_DK_LIB_PATH}/Bluetooth_LE/src/stack_user_cfg.c
+	${BLUENRG_DK_LIB_PATH}/Bluetooth_LE/src/stack_user_cfg.c #\
+    # ${BLUENRG_DK_LIB_PATH}/${SDK_EVAL_PATH}/SDK_EVAL_SPI.c 
 
 
 PRE_OBJS = $(wildcard precompiled/*.o)
